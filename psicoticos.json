@@ -1,0 +1,199 @@
+{
+  "questions": [
+    {
+      "id": "F1",
+      "categoria": "Fácil",
+      "enunciado": "De acordo com os excertos, a Psicose é caracterizada por qual prejuízo, na ausência de rebaixamento da consciência?",
+      "alternativas": {
+        "A": "Prejuízo da memória de curto prazo.",
+        "B": "Prejuízo da avaliação da realidade.",
+        "C": "Prejuízo exclusivo das funções motoras.",
+        "D": "Prejuízo da volição (vontade)."
+      },
+      "resposta": "B",
+      "explicacao": "A psicose é definida como um transtorno mental caracterizado pelo prejuízo da avaliação da realidade, sem rebaixamento da consciência."
+    },
+    {
+      "id": "F2",
+      "categoria": "Fácil",
+      "enunciado": "Qual é a prevalência de vida aproximada da Esquizofrenia no mundo?",
+      "alternativas": {
+        "A": "10 a 70 por 100.000 habitantes/ano.",
+        "B": "50%.",
+        "C": "Aproximadamente 1%.",
+        "D": "Prevalência maior em homens."
+      },
+      "resposta": "C",
+      "explicacao": "A prevalência de vida da esquizofrenia é de aproximadamente 1% na população mundial."
+    },
+    {
+      "id": "F3",
+      "categoria": "Fácil",
+      "enunciado": "Para que o diagnóstico de Esquizofrenia seja estabelecido, os sintomas devem persistir por um período mínimo de:",
+      "alternativas": {
+        "A": "Um dia.",
+        "B": "Um mês.",
+        "C": "Seis meses.",
+        "D": "Dois anos."
+      },
+      "resposta": "C",
+      "explicacao": "O DSM-5-TR exige que os sintomas persistam por pelo menos 6 meses."
+    },
+    {
+      "id": "F4",
+      "categoria": "Fácil",
+      "enunciado": "Os antipsicóticos típicos alcançam sua eficácia primariamente pelo antagonismo de qual receptor neuroquímico?",
+      "alternativas": {
+        "A": "Receptores GABA.",
+        "B": "Receptores NMDA glutamatérgicos.",
+        "C": "Receptores dopaminérgicos D2.",
+        "D": "Receptores serotoninérgicos."
+      },
+      "resposta": "C",
+      "explicacao": "A eficácia dos antipsicóticos típicos está associada ao antagonismo dos receptores dopaminérgicos D2."
+    },
+    {
+      "id": "F5",
+      "categoria": "Fácil",
+      "enunciado": "Qual psiquiatra introduziu o termo 'esquizofrenia' para substituir 'demência precoce'?",
+      "alternativas": {
+        "A": "Emil Kraepelin.",
+        "B": "Eugen Bleuler.",
+        "C": "Karl Jaspers.",
+        "D": "Kurt Schneider."
+      },
+      "resposta": "B",
+      "explicacao": "Eugen Bleuler introduziu o termo 'esquizofrenia' ao propor que o transtorno não era necessariamente deteriorante."
+    },
+    {
+      "id": "M6",
+      "categoria": "Média",
+      "enunciado": "Qual subtipo de esquizofrenia é citado como o mais comum, caracterizado por delírios e alucinações proeminentes?",
+      "alternativas": {
+        "A": "Esquizofrenia Hebefrênica.",
+        "B": "Esquizofrenia Catatônica.",
+        "C": "Esquizofrenia Paranoide.",
+        "D": "Esquizofrenia Residual."
+      },
+      "resposta": "C",
+      "explicacao": "A esquizofrenia paranoide é a forma mais comum, marcada por delírios e alucinações auditivas."
+    },
+    {
+      "id": "M7",
+      "categoria": "Média",
+      "enunciado": "O Transtorno Esquizofreniforme difere da Esquizofrenia principalmente em quais aspectos?",
+      "alternativas": {
+        "A": "Duração de 6 meses a 1 ano e ausência de sintomas negativos.",
+        "B": "Duração de 1 a 6 meses e ausência de declínio no funcionamento.",
+        "C": "Início agudo e presença de sintomas psicóticos não-orgânicos.",
+        "D": "Presença exclusiva de delírios."
+      },
+      "resposta": "B",
+      "explicacao": "O transtorno esquizofreniforme dura entre 1 e 6 meses e não exige declínio funcional significativo."
+    },
+    {
+      "id": "M8",
+      "categoria": "Média",
+      "enunciado": "Quais são os Quatro As de Bleuler, considerados fundamentais na esquizofrenia?",
+      "alternativas": {
+        "A": "Alucinação, Apatia, Ansiedade e Agressividade.",
+        "B": "Associação, Afeto, Autismo e Ambivalência.",
+        "C": "Agitação, Apatia, Abulia e Afeto embotado.",
+        "D": "Afasia, Apraxia, Agnosia e Amnésia."
+      },
+      "resposta": "B",
+      "explicacao": "Bleuler propôs os Quatro As: Associação, Afeto, Autismo e Ambivalência."
+    },
+    {
+      "id": "M9",
+      "categoria": "Média",
+      "enunciado": "Qual dos seguintes fatores está associado a bom prognóstico na Esquizofrenia?",
+      "alternativas": {
+        "A": "História familiar de esquizofrenia.",
+        "B": "Início precoce e insidioso.",
+        "C": "Início tardio e fatores precipitantes.",
+        "D": "Retraimento autístico."
+      },
+      "resposta": "C",
+      "explicacao": "Início tardio e fatores precipitantes estão associados a melhor prognóstico."
+    },
+    {
+      "id": "M10",
+      "categoria": "Média",
+      "enunciado": "Qual é a característica essencial do Transtorno Delirante Induzido (Folie à Deux)?",
+      "alternativas": {
+        "A": "Ocorre apenas entre familiares de primeiro grau.",
+        "B": "Os delírios desaparecem quando as pessoas são separadas.",
+        "C": "Ambos possuem um transtorno psicótico genuíno.",
+        "D": "Há embotamento afetivo proeminente."
+      },
+      "resposta": "B",
+      "explicacao": "O transtorno delirante induzido ocorre quando delírios são transmitidos a uma pessoa dependente e cessam com a separação."
+    },
+    {
+      "id": "D11",
+      "categoria": "Difícil",
+      "enunciado": "Qual é a principal diferença entre DSM-5-TR e CID-10 quanto ao diagnóstico da Esquizofrenia?",
+      "alternativas": {
+        "A": "O DSM-5-TR elimina subtipos; a CID-10 os mantém.",
+        "B": "O DSM-5-TR foca em sintomas positivos; a CID-10 apenas negativos.",
+        "C": "O DSM-5-TR exige 6 meses de sintomas; a CID-10 exige 1 mês.",
+        "D": "A CID-10 exige episódio de humor proeminente; o DSM-5-TR não."
+      },
+      "resposta": "C",
+      "explicacao": "O DSM-5-TR exige duração mínima de 6 meses, enquanto a CID-10 exige apenas 1 mês."
+    },
+    {
+      "id": "D12",
+      "categoria": "Difícil",
+      "enunciado": "Para o diagnóstico de Transtorno Esquizoafetivo, qual é a duração mínima de delírios ou alucinações sem sintomas de humor?",
+      "alternativas": {
+        "A": "7 dias.",
+        "B": "2 semanas.",
+        "C": "1 mês.",
+        "D": "6 meses."
+      },
+      "resposta": "B",
+      "explicacao": "O DSM-5 exige pelo menos 2 semanas de sintomas psicóticos sem sintomas de humor."
+    },
+    {
+      "id": "D13",
+      "categoria": "Difícil",
+      "enunciado": "De acordo com a Hipótese Glutamatérgica, qual é a consequência final da hipofunção de receptores NMDA?",
+      "alternativas": {
+        "A": "Diminuição da eficácia dos antipsicóticos.",
+        "B": "Hipometabolismo frontal.",
+        "C": "Estimulação excessiva da via dopaminérgica.",
+        "D": "Degeneração do giro para-hipocampal."
+      },
+      "resposta": "C",
+      "explicacao": "A hipofunção dos NMDA leva à falta de inibição, resultando em hiperestimulação dopaminérgica."
+    },
+    {
+      "id": "D14",
+      "categoria": "Difícil",
+      "enunciado": "Qual é a principal característica da Esquizofrenia Simples?",
+      "alternativas": {
+        "A": "Delírios grandiosos proeminentes.",
+        "B": "Ausência de demência e sintomas catatônicos.",
+        "C": "Sintomas negativos sem sintomas psicóticos evidentes.",
+        "D": "Ocorre após depressão pós-esquizofrênica."
+      },
+      "resposta": "C",
+      "explicacao": "Na esquizofrenia simples, predominam sintomas negativos sem delírios ou alucinações evidentes."
+    },
+    {
+      "id": "D15",
+      "categoria": "Difícil",
+      "enunciado": "Qual achado de neuroimagem estrutural é observado em pacientes com Esquizofrenia?",
+      "alternativas": {
+        "A": "Hipometabolismo frontal.",
+        "B": "Aumento dos ventrículos cerebrais.",
+        "C": "Aumento da atividade dopaminérgica.",
+        "D": "Defeitos nas sinapses NMDA."
+      },
+      "resposta": "B",
+      "explicacao": "Estudos estruturais mostram aumento dos ventrículos e redução de volume cerebral."
+    }
+  ]
+}
