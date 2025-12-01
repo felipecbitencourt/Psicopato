@@ -1,0 +1,199 @@
+{
+  "questions": [
+    {
+      "id": "F1",
+      "categoria": "Fácil",
+      "enunciado": "Dentro da classificação apresentada nos excertos, qual dos seguintes transtornos pertence ao grupo das Disfunções Sexuais?",
+      "alternativas": {
+        "A": "Transtorno Voyeurista.",
+        "B": "Transtorno Fetichista.",
+        "C": "Transtorno Erétil.",
+        "D": "Transtorno Pedofílico."
+      },
+      "correta": "C",
+      "explicacao": "O Transtorno Erétil é listado como uma Disfunção Sexual, diferentemente das parafilias."
+    },
+    {
+      "id": "F2",
+      "categoria": "Fácil",
+      "enunciado": "A Dispareunia é definida como:",
+      "alternativas": {
+        "A": "Constrição involuntária do terço externo da vagina.",
+        "B": "Dor recorrente e persistente durante ou após o intercurso sexual em homens ou mulheres.",
+        "C": "Incapacidade de alcançar ou manter ereção suficiente para o intercurso.",
+        "D": "Orgasmo que ocorre antes do desejado."
+      },
+      "correta": "B",
+      "explicacao": "Dispareunia refere-se à dor persistente durante ou após o coito."
+    },
+    {
+      "id": "F3",
+      "categoria": "Fácil",
+      "enunciado": "Qual substância atua facilitando o fluxo sanguíneo peniano ao intensificar o óxido nítrico?",
+      "alternativas": {
+        "A": "Fenotiazinas.",
+        "B": "Sildenafila.",
+        "C": "Antidepressivos tricíclicos.",
+        "D": "Ansiolíticos benzodiazepínicos."
+      },
+      "correta": "B",
+      "explicacao": "A sildenafila é um intensificador do óxido nítrico que promove vasodilatação peniana."
+    },
+    {
+      "id": "F4",
+      "categoria": "Fácil",
+      "enunciado": "Segundo os excertos, mais de 50% das parafilias têm início:",
+      "alternativas": {
+        "A": "Antes dos 10 anos.",
+        "B": "Antes dos 18 anos.",
+        "C": "Durante a fase fálica.",
+        "D": "Após os 25 anos."
+      },
+      "correta": "B",
+      "explicacao": "A maioria das parafilias tem início antes dos 18 anos."
+    },
+    {
+      "id": "F5",
+      "categoria": "Fácil",
+      "enunciado": "O Vaginismo caracteriza-se por:",
+      "alternativas": {
+        "A": "Ausência de fantasias sexuais por pelo menos 6 meses.",
+        "B": "Dor pélvica crônica associada a trauma sexual.",
+        "C": "Contração involuntária dos músculos do terço externo da vagina.",
+        "D": "Incapacidade de manter a excitação devido à redução de testosterona."
+      },
+      "correta": "C",
+      "explicacao": "O vaginismo envolve contração involuntária dos músculos vaginais, impedindo a penetração."
+    },
+    {
+      "id": "M6",
+      "categoria": "Média",
+      "enunciado": "Para Freud, o baixo desejo sexual decorre principalmente de:",
+      "alternativas": {
+        "A": "Aumento de testosterona e estresse crônico.",
+        "B": "Condicionamento negativo durante a iniciação sexual.",
+        "C": "Inibição durante a fase fálica e conflitos edípicos não resolvidos.",
+        "D": "Doenças crônicas que diminuem a libido."
+      },
+      "correta": "C",
+      "explicacao": "Freud associava o desejo hipoativo à inibição fálica e conflitos edípicos."
+    },
+    {
+      "id": "M7",
+      "categoria": "Média",
+      "enunciado": "Entre os homens que relatam queixas sexuais, a Ejaculação Precoce corresponde aproximadamente a:",
+      "alternativas": {
+        "A": "1%.",
+        "B": "10–20%.",
+        "C": "35–40%.",
+        "D": "Mais de 50%."
+      },
+      "correta": "C",
+      "explicacao": "Cerca de 35 a 40% das queixas masculinas referem-se à ejaculação precoce."
+    },
+    {
+      "id": "M8",
+      "categoria": "Média",
+      "enunciado": "A Terapia Sexual Dual se fundamenta na ideia de que:",
+      "alternativas": {
+        "A": "A adequação sexual depende da resolução de conflitos inconscientes.",
+        "B": "A disfunção resulta de comportamentos condicionados inadequadamente.",
+        "C": "O problema sexual expressa desarmonia conjugal, e a díade é o foco do tratamento.",
+        "D": "A disfunção sexual decorre de anormalidades hormonais."
+      },
+      "correta": "C",
+      "explicacao": "A terapia de Masters e Johnson trata o casal como unidade terapêutica."
+    },
+    {
+      "id": "M9",
+      "categoria": "Média",
+      "enunciado": "Álcool, cocaína e anfetaminas podem facilitar o início da atividade sexual por remover inibições, porém seu efeito sobre o desempenho é:",
+      "alternativas": {
+        "A": "Aumentar o desejo e melhorar o desempenho.",
+        "B": "Não alterar o desempenho.",
+        "C": "Prejudicar o desempenho.",
+        "D": "Causar compulsão sexual grave."
+      },
+      "correta": "C",
+      "explicacao": "Essas substâncias reduzem a inibição, mas prejudicam o desempenho."
+    },
+    {
+      "id": "M10",
+      "categoria": "Média",
+      "enunciado": "Qual distinção é apontada entre o Transtorno Orgásmico Primário e o Adquirido?",
+      "alternativas": {
+        "A": "O primário decorre de trauma e o adquirido de culpa.",
+        "B": "O primário é ausência de orgasmo ao longo da vida e o adquirido surge após já ter havido orgasmo.",
+        "C": "O adquirido decorre exclusivamente de condições médicas.",
+        "D": "O primário ocorre em 1% e o adquirido em 10–20%."
+      },
+      "correta": "B",
+      "explicacao": "O primário envolve ausência vitalícia de orgasmo; o adquirido aparece após experiências orgásticas prévias."
+    },
+    {
+      "id": "D11",
+      "categoria": "Difícil",
+      "enunciado": "Para o diagnóstico de Transtorno Pedofílico, o indivíduo deve:",
+      "alternativas": {
+        "A": "Ter pelo menos 18 anos e ser 10 anos mais velho que a vítima.",
+        "B": "Ter pelo menos 16 anos e ser 5 anos mais velho que a vítima.",
+        "C": "Ter ao menos 5 anos de diferença da vítima.",
+        "D": "Ter mais de 16 anos e envolver-se com crianças abaixo de 13 anos."
+      },
+      "correta": "B",
+      "explicacao": "O critério exige idade mínima de 16 anos e diferença de pelo menos 5 anos."
+    },
+    {
+      "id": "D12",
+      "categoria": "Difícil",
+      "enunciado": "Segundo a visão psicanalítica, no fetichismo o sapato simboliza:",
+      "alternativas": {
+        "A": "O objeto transvéstico.",
+        "B": "A representação do falo.",
+        "C": "Uma defesa contra punição.",
+        "D": "Hostilidade contra figuras masculinas."
+      },
+      "correta": "B",
+      "explicacao": "O fetiche funciona como substituto simbólico do falo ausente."
+    },
+    {
+      "id": "D13",
+      "categoria": "Difícil",
+      "enunciado": "Uma das primeiras restrições da Terapia Sexual Dual é:",
+      "alternativas": {
+        "A": "Proibir discussões sobre o problema sexual.",
+        "B": "Iniciar o tratamento com estimulação genital.",
+        "C": "Proibir toda atividade sexual não prescrita, incluindo o intercurso.",
+        "D": "Restringir manifestações emocionais na sessão."
+      },
+      "correta": "C",
+      "explicacao": "A terapia restringe carícias e intercurso no início para reduzir ansiedade de desempenho."
+    },
+    {
+      "id": "D14",
+      "categoria": "Difícil",
+      "enunciado": "Qual grupo farmacológico pode retardar a ejaculação e causar disfunção orgástica?",
+      "alternativas": {
+        "A": "Opioides e benzodiazepínicos.",
+        "B": "Sildenafila e cocaína.",
+        "C": "Anti-hipertensivos, fenotiazinas, antidepressivos tricíclicos e ISRS.",
+        "D": "Álcool e anfetaminas."
+      },
+      "correta": "C",
+      "explicacao": "Esses fármacos estão associados a disfunção orgástica e redução do desejo."
+    },
+    {
+      "id": "D15",
+      "categoria": "Difícil",
+      "enunciado": "O termo que designa a busca de orgasmo associada à hipóxia por asfixia é:",
+      "alternativas": {
+        "A": "Zoofilia.",
+        "B": "Urofilia.",
+        "C": "Necrofilia.",
+        "D": "Hipoxifilia."
+      },
+      "correta": "D",
+      "explicacao": "Hipoxifilia refere-se ao uso da redução de oxigênio como estímulo sexual."
+    }
+  ]
+}
