@@ -1,0 +1,199 @@
+{
+  "questions": [
+    {
+      "id": "F1",
+      "categoria": "Fácil",
+      "pergunta": "O termo 'Síndrome cerebral orgânica' é utilizado para descrever uma alteração do funcionamento mental causada por:",
+      "alternativas": {
+        "A": "Um transtorno psiquiátrico primário.",
+        "B": "Um transtorno do humor de origem orgânica.",
+        "C": "Uma condição médica não psiquiátrica.",
+        "D": "Exclusivamente doenças neurodegenerativas."
+      },
+      "correta": "C",
+      "explicacao": "A síndrome cerebral orgânica descreve déficits cognitivos decorrentes de uma condição médica não psiquiátrica."
+    },
+    {
+      "id": "F2",
+      "categoria": "Fácil",
+      "pergunta": "Segundo o DSM-5, o Delirium envolve uma perturbação da atenção acompanhada de alteração de qual outra função mental?",
+      "alternativas": {
+        "A": "Linguagem.",
+        "B": "Memória de longo prazo.",
+        "C": "Nível de consciência.",
+        "D": "Capacidade visuoespacial."
+      },
+      "correta": "C",
+      "explicacao": "O Delirium envolve alteração da atenção associada a alteração do nível de consciência."
+    },
+    {
+      "id": "F3",
+      "categoria": "Fácil",
+      "pergunta": "A prevalência aproximada de Demência em indivíduos com mais de 80 anos é:",
+      "alternativas": {
+        "A": "5%.",
+        "B": "15%.",
+        "C": "20%.",
+        "D": "50%."
+      },
+      "correta": "C",
+      "explicacao": "Cerca de 20% dos idosos acima de 80 anos apresentam algum tipo de demência."
+    },
+    {
+      "id": "F4",
+      "categoria": "Fácil",
+      "pergunta": "Qual transtorno cognitivo é classicamente descrito como agudo e reversível?",
+      "alternativas": {
+        "A": "Demência Vascular.",
+        "B": "Doença de Alzheimer.",
+        "C": "Demência.",
+        "D": "Delirium."
+      },
+      "correta": "D",
+      "explicacao": "Delirium é um quadro de instalação aguda e geralmente reversível."
+    },
+    {
+      "id": "F5",
+      "categoria": "Fácil",
+      "pergunta": "Além de Delirium e Demência, qual categoria adicional aparece na introdução como transtorno cognitivo?",
+      "alternativas": {
+        "A": "Transtorno do humor orgânico.",
+        "B": "Transtorno delirante orgânico.",
+        "C": "Transtornos amnésticos.",
+        "D": "Alucinose orgânica."
+      },
+      "correta": "C",
+      "explicacao": "Os transtornos cognitivos incluem delirium, demência e transtornos amnésticos."
+    },
+    {
+      "id": "M6",
+      "categoria": "Média",
+      "pergunta": "Qual característica frequentemente permanece preservada por algum tempo na Demência Vascular, distinguindo-a de outros tipos de demência?",
+      "alternativas": {
+        "A": "Marcha normal.",
+        "B": "Ausência de confusão noturna.",
+        "C": "Julgamento e insight.",
+        "D": "Início insidioso e progressivo."
+      },
+      "correta": "C",
+      "explicacao": "Julgamento e insight tendem a permanecer preservados por algum tempo na Demência Vascular."
+    },
+    {
+      "id": "M7",
+      "categoria": "Média",
+      "pergunta": "Apesar de a demência ser majoritariamente irreversível, qual porcentagem de casos em idosos pode ser reversível se a causa subjacente for tratável?",
+      "alternativas": {
+        "A": "5%.",
+        "B": "15%.",
+        "C": "30%.",
+        "D": "50%."
+      },
+      "correta": "B",
+      "explicacao": "Aproximadamente 15% das demências são reversíveis quando a causa é tratável."
+    },
+    {
+      "id": "M8",
+      "categoria": "Média",
+      "pergunta": "Qual é a faixa de prevalência observada de Delirium em pacientes internados em Unidades de Cuidados Cardíacos Intensivos?",
+      "alternativas": {
+        "A": "1,1%.",
+        "B": "10–30%.",
+        "C": "30%.",
+        "D": "40–50%."
+      },
+      "correta": "D",
+      "explicacao": "A prevalência de Delirium em UTIs cardíacas é estimada em 40–50%."
+    },
+    {
+      "id": "M9",
+      "categoria": "Média",
+      "pergunta": "A incapacidade de reconhecer objetos apesar de funções sensoriais preservadas é chamada de:",
+      "alternativas": {
+        "A": "Afasia.",
+        "B": "Apraxia.",
+        "C": "Agnosia.",
+        "D": "Anosognosia."
+      },
+      "correta": "C",
+      "explicacao": "Agnosia é a perda da capacidade de reconhecer objetos mesmo com sensações preservadas."
+    },
+    {
+      "id": "M10",
+      "categoria": "Média",
+      "pergunta": "Em que proporção aproximada pacientes com Demência apresentam delírios?",
+      "alternativas": {
+        "A": "20–30%.",
+        "B": "30–40%.",
+        "C": "40–50%.",
+        "D": "Acima de 50%."
+      },
+      "correta": "B",
+      "explicacao": "Entre 30% e 40% dos pacientes com demência apresentam delírios."
+    },
+    {
+      "id": "D11",
+      "categoria": "Difícil",
+      "pergunta": "Além de placas amiloides e emaranhados neurofibrilares, qual outra alteração é descrita na Doença de Alzheimer?",
+      "alternativas": {
+        "A": "Redução da atividade serotoninérgica.",
+        "B": "Degeneração dos neurônios dopaminérgicos.",
+        "C": "Degeneração de neurônios colinérgicos e redução do metabolismo da acetilcolina.",
+        "D": "Aumento da atividade da acetilcolinesterase."
+      },
+      "correta": "C",
+      "explicacao": "Alzheimer envolve degeneração colinérgica e diminuição do metabolismo de acetilcolina."
+    },
+    {
+      "id": "D12",
+      "categoria": "Difícil",
+      "pergunta": "Segundo o DSM-5, o Delirium se desenvolve em horas a poucos dias e apresenta qual curso ao longo de um mesmo dia?",
+      "alternativas": {
+        "A": "Piora progressiva contínua.",
+        "B": "Flutuação da gravidade.",
+        "C": "Estabilidade até remissão.",
+        "D": "Curso explicado por transtorno neurocognitivo prévio."
+      },
+      "correta": "B",
+      "explicacao": "O Delirium tipicamente flutua ao longo do dia."
+    },
+    {
+      "id": "D13",
+      "categoria": "Difícil",
+      "pergunta": "Além de sintomas parkinsonianos e atenção flutuante, qual achado é característico da Doença por Corpos de Lewy?",
+      "alternativas": {
+        "A": "Memória de curto prazo preservada inicialmente.",
+        "B": "Alucinações visuais proeminentes e quedas.",
+        "C": "Início mais precoce que na Doença de Alzheimer.",
+        "D": "Preservação do julgamento e insight."
+      },
+      "correta": "B",
+      "explicacao": "A Doença por Corpos de Lewy cursa com alucinações visuais frequentes e quedas."
+    },
+    {
+      "id": "D14",
+      "categoria": "Difícil",
+      "pergunta": "Qual condição é citada como exemplo de demência subcortical, marcada por alterações emocionais e motoras?",
+      "alternativas": {
+        "A": "Degeneração lobar frontotemporal.",
+        "B": "Doença de Alzheimer.",
+        "C": "Doença de Parkinson.",
+        "D": "Doença priônica."
+      },
+      "correta": "C",
+      "explicacao": "A demência associada à Doença de Parkinson é subcortical."
+    },
+    {
+      "id": "D15",
+      "categoria": "Difícil",
+      "pergunta": "No diagnóstico de Transtorno Neurocognitivo Maior, os déficits cognitivos não devem ocorrer exclusivamente no contexto de:",
+      "alternativas": {
+        "A": "Depressão maior.",
+        "B": "Esquizofrenia.",
+        "C": "Delirium.",
+        "D": "Envelhecimento normal."
+      },
+      "correta": "C",
+      "explicacao": "O diagnóstico de TNC Maior exclui déficits cognitivos ocorrendo apenas durante o Delirium."
+    }
+  ]
+}
