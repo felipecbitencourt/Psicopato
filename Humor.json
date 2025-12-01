@@ -1,0 +1,199 @@
+{
+  "questoes": [
+    {
+      "id": "F1",
+      "categoria": "Fácil",
+      "enunciado": "Segundo a definição apresentada, qual é a característica nuclear dos Transtornos do Humor?",
+      "alternativas": {
+        "A": "A ausência de deterioração cognitiva progressiva.",
+        "B": "Uma perturbação do humor, manifestada por depressão ou elação (mania).",
+        "C": "Alterações crônicas nas aminas biogênicas.",
+        "D": "O risco aumentado de suicídio."
+      },
+      "correta": "B",
+      "explicacao": "O núcleo dos transtornos do humor é a alteração do humor, seja depressiva ou maníaca."
+    },
+    {
+      "id": "F2",
+      "categoria": "Fácil",
+      "enunciado": "Quem é reconhecido como o primeiro a utilizar os termos 'mania' e 'melancolia', diferenciando a depressão como doença?",
+      "alternativas": {
+        "A": "Emil Kraepelin.",
+        "B": "Cornelius Celsus.",
+        "C": "Hipócrates.",
+        "D": "Robert Burton."
+      },
+      "correta": "C",
+      "explicacao": "Hipócrates utilizou os termos 'mania' e 'melancolia' por volta de 400 a.C."
+    },
+    {
+      "id": "F3",
+      "categoria": "Fácil",
+      "enunciado": "Quais neurotransmissores são mais implicados na fisiopatologia dos transtornos do humor segundo a hipótese monoaminérgica?",
+      "alternativas": {
+        "A": "Acetilcolina e GABA.",
+        "B": "Dopamina e Glicina.",
+        "C": "Noradrenalina e Serotonina.",
+        "D": "Glutamato e Histamina."
+      },
+      "correta": "C",
+      "explicacao": "A hipótese monoaminérgica enfatiza o papel da noradrenalina e serotonina."
+    },
+    {
+      "id": "F4",
+      "categoria": "Fácil",
+      "enunciado": "A prevalência do Transtorno Depressivo Maior (TDM) é:",
+      "alternativas": {
+        "A": "Igual entre homens e mulheres.",
+        "B": "Duas vezes maior no sexo feminino.",
+        "C": "Três vezes maior no sexo feminino.",
+        "D": "Sem diferenças entre grupos."
+      },
+      "correta": "B",
+      "explicacao": "O TDM ocorre cerca de duas vezes mais em mulheres."
+    },
+    {
+      "id": "F5",
+      "categoria": "Fácil",
+      "enunciado": "Qual é a estimativa global de prevalência de depressão segundo a OMS (2020)?",
+      "alternativas": {
+        "A": "1%.",
+        "B": "10,4%.",
+        "C": "15%.",
+        "D": "60,7%."
+      },
+      "correta": "B",
+      "explicacao": "A OMS estima prevalência global de cerca de 10,4%."
+    },
+    {
+      "id": "M6",
+      "categoria": "Média",
+      "enunciado": "Sem tratamento, um episódio depressivo maior costuma durar:",
+      "alternativas": {
+        "A": "Cerca de 3 meses.",
+        "B": "De 1 a 2 anos.",
+        "C": "De 6 a 13 meses.",
+        "D": "De 2 a 5 meses."
+      },
+      "correta": "C",
+      "explicacao": "O episódio não tratado costuma durar de 6 a 13 meses."
+    },
+    {
+      "id": "M7",
+      "categoria": "Média",
+      "enunciado": "Qual fator diferencia mais claramente um Episódio Maníaco de um Hipomaníaco?",
+      "alternativas": {
+        "A": "A duração mínima: hipomania exige 7 dias.",
+        "B": "O humor: mania nunca é irritável.",
+        "C": "A severidade, pois a mania pode exigir hospitalização ou apresentar psicose.",
+        "D": "A redução da necessidade de sono, exclusiva da mania."
+      },
+      "correta": "C",
+      "explicacao": "A mania é mais grave, podendo exigir internação ou apresentar sintomas psicóticos."
+    },
+    {
+      "id": "M8",
+      "categoria": "Média",
+      "enunciado": "Quais efeitos adversos são típicos dos antidepressivos tricíclicos?",
+      "alternativas": {
+        "A": "Disfunção sexual e insônia.",
+        "B": "Náuseas e sintomas gastrointestinais.",
+        "C": "Sedação e discrasias sanguíneas.",
+        "D": "Efeitos anticolinérgicos como boca seca, constipação e risco cardíaco."
+      },
+      "correta": "D",
+      "explicacao": "Os ADT têm potente ação anticolinérgica e risco cardíaco."
+    },
+    {
+      "id": "M9",
+      "categoria": "Média",
+      "enunciado": "O Transtorno Bipolar I costuma iniciar-se mais frequentemente por:",
+      "alternativas": {
+        "A": "Mania em 75% das mulheres.",
+        "B": "Depressão: 75% das mulheres e 67% dos homens.",
+        "C": "Hipomania em 10–20% dos casos.",
+        "D": "Episódio misto."
+      },
+      "correta": "B",
+      "explicacao": "O TB I inicia-se predominantemente por episódios depressivos."
+    },
+    {
+      "id": "M10",
+      "categoria": "Média",
+      "enunciado": "O Transtorno Depressivo Persistente caracteriza-se por:",
+      "alternativas": {
+        "A": "Ser mais grave que o TDM e episódico.",
+        "B": "Ser mais brando que o TDM e inespecífico.",
+        "C": "Ser crônico (≥ 2 anos) e menos grave que um TDM.",
+        "D": "Ser crônico, mas sem baixa autoestima ou desesperança."
+      },
+      "correta": "C",
+      "explicacao": "A distimia é crônica e de menor gravidade que um episódio depressivo maior."
+    },
+    {
+      "id": "D11",
+      "categoria": "Difícil",
+      "enunciado": "Para confirmar o diagnóstico de Episódio Depressivo Maior, um dos sintomas obrigatórios deve ser:",
+      "alternativas": {
+        "A": "Fadiga.",
+        "B": "Pensamentos recorrentes de morte.",
+        "C": "Humor deprimido ou perda de interesse/prazer.",
+        "D": "Agitação ou retardo psicomotor."
+      },
+      "correta": "C",
+      "explicacao": "O DSM exige pelo menos um dos dois sintomas nucleares: humor deprimido ou anedonia."
+    },
+    {
+      "id": "D12",
+      "categoria": "Difícil",
+      "enunciado": "Parentes de primeiro grau de indivíduos com Transtorno Bipolar I têm risco:",
+      "alternativas": {
+        "A": "2 a 3 vezes maior que a população geral.",
+        "B": "8 a 18 vezes maior.",
+        "C": "25% de chance de algum transtorno do humor.",
+        "D": "50% de chance de ter um dos pais afetado."
+      },
+      "correta": "B",
+      "explicacao": "O risco aumenta de 8 a 18 vezes em parentes de 1º grau."
+    },
+    {
+      "id": "D13",
+      "categoria": "Difícil",
+      "enunciado": "Sobre o local de residência, qual diferença se observa entre Transtorno Depressivo e Transtorno Bipolar?",
+      "alternativas": {
+        "A": "Ambos são mais prevalentes nos centros urbanos.",
+        "B": "T. Bipolar é mais prevalente nos subúrbios; T. Depressivo nos centros urbanos.",
+        "C": "T. Depressivo é mais prevalente nos subúrbios; T. Bipolar nos centros urbanos.",
+        "D": "Não há relação conhecida com geografia."
+      },
+      "correta": "B",
+      "explicacao": "O risco de T. Bipolar é maior em áreas suburbanas, enquanto depressão é mais comum em centros urbanos."
+    },
+    {
+      "id": "D14",
+      "categoria": "Difícil",
+      "enunciado": "A prevalência de abuso/dependência de álcool e drogas em pacientes com Transtorno Bipolar é aproximadamente:",
+      "alternativas": {
+        "A": "16%.",
+        "B": "32%.",
+        "C": "60,7%.",
+        "D": "95%."
+      },
+      "correta": "C",
+      "explicacao": "A taxa é cerca de 60,7%, muito maior que os 13,3% da população geral."
+    },
+    {
+      "id": "D15",
+      "categoria": "Difícil",
+      "enunciado": "Qual classe de medicamentos é preferida no tratamento de manutenção do T. Bipolar I em cicladores rápidos?",
+      "alternativas": {
+        "A": "ISRSs.",
+        "B": "Carbonato de Lítio.",
+        "C": "Antipsicóticos atípicos.",
+        "D": "Carbamazepina e Ácido Valproico."
+      },
+      "correta": "D",
+      "explicacao": "Anticonvulsivantes como valproato e carbamazepina são mais eficazes em cicladores rápidos."
+    }
+  ]
+}
