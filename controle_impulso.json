@@ -1,0 +1,188 @@
+{
+  "title": "Transtornos do Controle de Impulsos",
+  "questions": [
+
+    /* ===========================
+       🌿 QUESTÕES FÁCEIS
+       =========================== */
+
+    {
+      "id": "F1",
+      "difficulty": "fácil",
+      "tags": ["DSM-5-TR", "tricotilomania", "classificação"],
+      "question": "De acordo com a classificação do DSM-5-TR, qual transtorno foi movido da categoria 'Transtornos do Controle dos Impulsos' para 'Transtorno Obsessivo-Compulsivo e Transtornos Relacionados'?",
+      "options": ["Transtorno Explosivo Intermitente", "Piromania", "Cleptomania", "Tricotilomania"],
+      "answer": 3,
+      "explanation": "A Tricotilomania foi movida do grupo de Transtornos do Controle dos Impulsos (DSM-IV-TR) para o grupo de TOC e Transtornos Relacionados no DSM-5-TR."
+    },
+
+    {
+      "id": "F2",
+      "difficulty": "fácil",
+      "tags": ["TEI", "agressividade"],
+      "question": "Qual é a principal característica da agressividade no Transtorno Explosivo Intermitente?",
+      "options": ["É motivada por ganho financeiro", "É proporcional a qualquer estressor presente", "É desproporcional a qualquer estressor", "É acompanhada por delírios ou alucinações"],
+      "answer": 2,
+      "explanation": "O TEI envolve episódios de agressividade desproporcional a qualquer estressor."
+    },
+
+    {
+      "id": "F3",
+      "difficulty": "fácil",
+      "tags": ["oniomania", "diagnóstico"],
+      "question": "Qual é o status diagnóstico da Compulsão por Compras (Oniomania)?",
+      "options": ["Transtorno do Controle de Impulsos no DSM-5-TR", "F63.8 na CID-10", "Categoria diagnóstica separada", "Não é categoria diagnóstica separada"],
+      "answer": 3,
+      "explanation": "A compulsão por compras não é uma categoria diagnóstica formal no DSM-5-TR nem na CID-10."
+    },
+
+    {
+      "id": "F4",
+      "difficulty": "fácil",
+      "tags": ["cleptomania", "tensão", "impulso"],
+      "question": "Qual sensação ocorre imediatamente antes do ato de furtar na Cleptomania?",
+      "options": ["Raiva", "Gratificação", "Acúmulo de tensão", "Medo de ficar louco"],
+      "answer": 2,
+      "explanation": "A cleptomania apresenta acúmulo de tensão antes do furto e alívio após o ato."
+    },
+
+    {
+      "id": "F5",
+      "difficulty": "fácil",
+      "tags": ["piromania", "emocional"],
+      "question": "Qual característica está associada à Piromania ao provocar/incendiar fogo?",
+      "options": ["Indiferença às consequências", "Remorso intenso", "Agressão generalizada", "Perdas conjugais"],
+      "answer": 0,
+      "explanation": "Indivíduos com piromania frequentemente demonstram indiferença ou fascinação com o incêndio, sem remorso."
+    },
+
+    /* ===========================
+       🟧 QUESTÕES MÉDIAS
+       =========================== */
+
+    {
+      "id": "M6",
+      "difficulty": "médio",
+      "tags": ["piromania", "incêndio criminoso", "diagnóstico diferencial"],
+      "question": "A piromania difere do incêndio criminoso por qual motivo?",
+      "options": ["Excitação sexual", "Ganho financeiro ou vingança", "Incapacidade de prever consequências", "Resposta a delírios"],
+      "answer": 1,
+      "explanation": "O incêndio criminoso geralmente é motivado por benefício financeiro, vingança ou intenção deliberada."
+    },
+
+    {
+      "id": "M7",
+      "difficulty": "médio",
+      "tags": ["TEI", "biologia", "neuroquímica"],
+      "question": "Quais alterações neurobiológicas estão associadas ao Transtorno Explosivo Intermitente?",
+      "options": ["Alterações no sistema mesolímbico", "Baixa serotonina e alta testosterona", "Alta MAO plaquetária", "Alterações dopaminérgicas"],
+      "answer": 1,
+      "explanation": "O TEI está associado a baixa transmissão serotoninérgica e altas concentrações de testosterona."
+    },
+
+    {
+      "id": "M8",
+      "difficulty": "médio",
+      "tags": ["tricotilomania", "tricofagia"],
+      "question": "Qual é o termo para o hábito de mastigar e engolir cabelos após arrancá-los?",
+      "options": ["Tricofagia", "Oniomania", "Satiríase", "Cleptomania"],
+      "answer": 0,
+      "explanation": "Tricofagia é o ato de mastigar ou ingerir cabelos arrancados."
+    },
+
+    {
+      "id": "M9",
+      "difficulty": "médio",
+      "tags": ["jogo patológico", "perfil psicológico"],
+      "question": "Jogadores com Transtorno do Jogo geralmente são inteligentes e apresentam qual outra característica?",
+      "options": ["Suportam monotonia", "Nenhum comportamento antissocial", "Não suportam monotonia", "Dinheiro não importa para eles"],
+      "answer": 2,
+      "explanation": "Jogadores patológicos não suportam monotonia e buscam excitação constante."
+    },
+
+    {
+      "id": "M10",
+      "difficulty": "médio",
+      "tags": ["TEI", "pós-episódio", "emoções"],
+      "question": "Quais sentimentos podem ocorrer após os episódios de TEI?",
+      "options": ["Excitação sexual", "Euforia", "Depressão, ansiedade e culpa", "Vontade de vingança"],
+      "answer": 2,
+      "explanation": "É comum que pacientes apresentem culpa, ansiedade e sintomas depressivos após episódios agressivos."
+    },
+
+    /* ===========================
+       🔥 QUESTÕES DIFÍCEIS
+       =========================== */
+
+    {
+      "id": "D11",
+      "difficulty": "difícil",
+      "tags": ["psicanálise", "jogo patológico", "freud"],
+      "question": "Segundo Freud, qual é o desejo inconsciente do jogador compulsivo?",
+      "options": ["Controlar eventos", "Desejo inconsciente de perder", "Desejo sexual elevado", "Expressar impulsos agressivos"],
+      "answer": 1,
+      "explanation": "Para Freud, o jogador compulsivo joga para perder, aliviando sentimentos inconscientes de culpa."
+    },
+
+    {
+      "id": "D12",
+      "difficulty": "difícil",
+      "tags": ["TOC", "tricotilomania", "diferencial"],
+      "question": "Qual diferença fundamental entre Tricotilomania e TOC é destacada nos excertos?",
+      "options": [
+        "TOC não usa ISRS",
+        "Tricotilomania não envolve pensamentos obsessivos",
+        "Tricotilomania não tem comorbidade com TOC",
+        "Tricotilomania é mais comum em homens"
+      ],
+      "answer": 1,
+      "explanation": "Na Tricotilomania não há pensamentos obsessivos; o comportamento é focado no ato de arrancar cabelos."
+    },
+
+    {
+      "id": "D13",
+      "difficulty": "difícil",
+      "tags": ["jogo patológico", "fases", "desespero"],
+      "question": "Qual característica define a Fase do Desespero no Transtorno do Jogo?",
+      "options": [
+        "Ganhos altos",
+        "Aceitação das perdas",
+        "Vida organizada em torno do jogo",
+        "Jogar grandes somas, dívidas, agiotas e crimes"
+      ],
+      "answer": 3,
+      "explanation": "A fase do desespero é marcada por dívidas massivas, crimes e perda total de controle."
+    },
+
+    {
+      "id": "D14",
+      "difficulty": "difícil",
+      "tags": ["naltrexona", "tratamento", "impulsividade"],
+      "question": "A Naltrexona é listada como tratamento para quais transtornos?",
+      "options": [
+        "Piromania, TEI, Cleptomania e Tricotilomania",
+        "Cleptomania, Jogo Patológico, Tricotilomania e Compulsão pela Internet",
+        "Oniomania, Transtorno do Jogo, TEI e Compulsão Sexual",
+        "Escoriação, Jogo Patológico, Tricotilomania e Piromania"
+      ],
+      "answer": 1,
+      "explanation": "A Naltrexona é citada como útil para Cleptomania, Jogo Patológico, Tricotilomania e Compulsão pela Internet."
+    },
+
+    {
+      "id": "D15",
+      "difficulty": "difícil",
+      "tags": ["compulsão sexual", "donjuanismo", "siríase"],
+      "question": "O termo satiríase (donjuanismo) descreve:",
+      "options": [
+        "Ninfomania",
+        "Compulsão por compras",
+        "Donjuanismo — necessidade de múltiplas conquistas sexuais",
+        "Ingestão de cabelos"
+      ],
+      "answer": 2,
+      "explanation": "O donjuanismo descreve homens que buscam múltiplas conquistas para mascarar sentimentos de inferioridade."
+    }
+
+  ]
+}
