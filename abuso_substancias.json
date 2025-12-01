@@ -1,215 +1,200 @@
 {
-  "title": "Abuso de Substâncias",
-  "questions": [
+  "titulo": "Abuso de Substâncias",
+  "questoes": [
     {
       "id": "F1",
-      "difficulty": "fácil",
-      "tags": ["definição", "introdução"],
-      "question": "De acordo com os excertos apresentados, substâncias psicoativas são aquelas que alteram qual dos seguintes conjuntos de funções?",
-      "options": {
+      "categoria": "fácil",
+      "enunciado": "Substâncias psicoativas são aquelas que alteram quais tipos de funções psicológicas e comportamentais?",
+      "alternativas": {
         "A": "Apenas a estrutura ou função orgânica do corpo.",
         "B": "Somente as sensações e o humor.",
         "C": "As sensações, o humor, o pensamento, a consciência, o comportamento ou outras funções psicológicas.",
         "D": "Exclusivamente a via nigroestriatal e a via mesolímbica."
       },
-      "correct": "C",
-      "explanation": "Substâncias psicoativas alteram sensações, humor, pensamento, consciência, comportamento ou outras funções psicológicas."
+      "resposta": "C",
+      "explicacao": "Substâncias psicoativas modificam processos mentais, incluindo humor, percepção e comportamento."
     },
     {
       "id": "F2",
-      "difficulty": "fácil",
-      "tags": ["classificação", "alucinógenos"],
-      "question": "Qual das seguintes substâncias é listada exclusivamente na categoria de Substâncias Psicoativas Perturbadoras (Hallucinogenic)?",
-      "options": {
+      "categoria": "fácil",
+      "enunciado": "Qual das seguintes substâncias é classificada como psicoativa perturbadora (alucinógena)?",
+      "alternativas": {
         "A": "Ansiolíticos",
         "B": "Nicotina",
         "C": "Maconha",
         "D": "Opioides"
       },
-      "correct": "C",
-      "explanation": "A maconha é listada como substância psicoativa perturbadora, junto com os alucinógenos."
+      "resposta": "C",
+      "explicacao": "A maconha é listada entre as substâncias psicoativas perturbadoras junto dos alucinógenos."
     },
     {
       "id": "F3",
-      "difficulty": "fácil",
-      "tags": ["epidemiologia"],
-      "question": "Quais são as duas substâncias psicoativas usadas com maior frequência?",
-      "options": {
+      "categoria": "fácil",
+      "enunciado": "Quais são as duas substâncias psicoativas mais utilizadas na população geral?",
+      "alternativas": {
         "A": "Maconha e Solventes.",
         "B": "Cocaína e Anfetaminas.",
         "C": "Álcool e Nicotina.",
         "D": "Alucinógenos e Cafeína."
       },
-      "correct": "C",
-      "explanation": "Álcool e nicotina são as substâncias mais amplamente utilizadas."
+      "resposta": "C",
+      "explicacao": "Álcool e nicotina são as substâncias mais consumidas globalmente."
     },
     {
       "id": "F4",
-      "difficulty": "fácil",
-      "tags": ["neuroquímica", "via mesolímbica"],
-      "question": "Na via mesolímbica, o neurotransmissor associado à sensação de gratificação é:",
-      "options": {
+      "categoria": "fácil",
+      "enunciado": "Qual neurotransmissor está diretamente associado à sensação de recompensa na via mesolímbica?",
+      "alternativas": {
         "A": "Serotonina",
         "B": "GABA",
         "C": "Acetilcolina",
         "D": "Dopamina"
       },
-      "correct": "D",
-      "explanation": "A dopamina, projetada da área tegmental ventral ao nucleus accumbens, está relacionada à recompensa."
+      "resposta": "D",
+      "explicacao": "A dopamina liberada da área tegmental ventral para o nucleus accumbens medeia a recompensa."
     },
     {
       "id": "F5",
-      "difficulty": "fácil",
-      "tags": ["álcool", "mortalidade"],
-      "question": "O alcoolismo está à frente de todas as outras substâncias em mortes relacionadas e está associado a qual porcentagem das mortes por suicídio?",
-      "options": {
+      "categoria": "fácil",
+      "enunciado": "O alcoolismo está associado a aproximadamente qual porcentagem das mortes por suicídio?",
+      "alternativas": {
         "A": "50%",
         "B": "75%",
         "C": "Mais de 50%",
         "D": "25%"
       },
-      "correct": "D",
-      "explanation": "O alcoolismo está associado a cerca de 25% das mortes por suicídio."
+      "resposta": "D",
+      "explicacao": "O alcoolismo está envolvido em cerca de 25% dos casos de suicídio."
     },
     {
       "id": "M6",
-      "difficulty": "médio",
-      "tags": ["abstinência", "álcool"],
-      "question": "Em quanto tempo após a cessação do álcool surgem os tremores, sinal clássico de abstinência?",
-      "options": {
+      "categoria": "médio",
+      "enunciado": "Após cessar o consumo de álcool, em quanto tempo geralmente surgem os tremores de abstinência?",
+      "alternativas": {
         "A": "30 a 90 minutos",
         "B": "6 a 8 horas",
         "C": "12 a 24 horas",
         "D": "Até 72 horas"
       },
-      "correct": "B",
-      "explanation": "Os tremores se iniciam tipicamente de 6 a 8 horas após interrupção do consumo."
+      "resposta": "B",
+      "explicacao": "Os tremores iniciam tipicamente entre 6 e 8 horas após a interrupção."
     },
     {
       "id": "M7",
-      "difficulty": "médio",
-      "tags": ["opioides", "emergência"],
-      "question": "O tratamento imediato de superdosagem de opioides envolve administração intravenosa de qual antagonista?",
-      "options": {
+      "categoria": "médio",
+      "enunciado": "Qual antagonista opioide intravenoso é utilizado no tratamento imediato de superdosagem por opioides?",
+      "alternativas": {
         "A": "Metadona",
         "B": "Clonidina",
         "C": "Naltrexona",
         "D": "Naloxona"
       },
-      "correct": "D",
-      "explanation": "A naloxona é um antagonista opioide usado para reverter superdosagens."
+      "resposta": "D",
+      "explicacao": "A naloxona é o antagonista de ação rápida usado para reverter overdoses."
     },
     {
       "id": "M8",
-      "difficulty": "médio",
-      "tags": ["cannabis"],
-      "question": "Uma característica da Síndrome Amotivacional associada ao uso pesado de Cannabis é:",
-      "options": {
+      "categoria": "médio",
+      "enunciado": "A Síndrome Amotivacional relacionada ao uso crônico de Cannabis é caracterizada por:",
+      "alternativas": {
         "A": "Euforia leve e aumento da coordenação.",
-        "B": "Apatia, falta de energia e relutância em persistir em tarefas.",
+        "B": "Apatia, baixa energia e dificuldade de persistir em tarefas.",
         "C": "Hiperatividade autonômica.",
         "D": "Delírios paranoides."
       },
-      "correct": "B",
-      "explanation": "A síndrome cursa com apatia, falta de energia e queda de motivação."
+      "resposta": "B",
+      "explicacao": "A síndrome envolve apatia, falta de energia e redução da motivação."
     },
     {
       "id": "M9",
-      "difficulty": "médio",
-      "tags": ["epidemiologia", "universitários"],
-      "question": "Exceto álcool e tabaco, a substância ilícita mais usada entre universitários homens (1/3) é:",
-      "options": {
+      "categoria": "médio",
+      "enunciado": "Exceto álcool e tabaco, qual é a substância ilícita mais usada entre homens universitários?",
+      "alternativas": {
         "A": "Cocaína",
         "B": "Tranquilizantes",
         "C": "Maconha",
         "D": "Inalantes"
       },
-      "correct": "C",
-      "explanation": "A maconha é a mais usada entre homens universitários."
+      "resposta": "C",
+      "explicacao": "A maconha é a substância ilícita mais consumida entre universitários homens."
     },
     {
       "id": "M10",
-      "difficulty": "médio",
-      "tags": ["fisiologia", "álcool"],
-      "question": "Mulheres tendem a apresentar maior intoxicação por possuir menor quantidade de qual enzima?",
-      "options": {
+      "categoria": "médio",
+      "enunciado": "Mulheres tendem a apresentar maior intoxicação alcoólica por terem menor quantidade de qual enzima?",
+      "alternativas": {
         "A": "Aldeído desidrogenase",
         "B": "Acetilcolina",
         "C": "Álcool desidrogenase (ADH)",
         "D": "Dopamina"
       },
-      "correct": "C",
-      "explanation": "Mulheres possuem menos ADH gástrica, metabolizando menos álcool."
+      "resposta": "C",
+      "explicacao": "Mulheres possuem menos ADH gástrica, metabolizando menos álcool inicialmente."
     },
     {
       "id": "D11",
-      "difficulty": "difícil",
-      "tags": ["DSM-5", "álcool"],
-      "question": "Quantos sintomas são necessários para diagnosticar Transtorno por Uso de Álcool segundo o DSM-5-TR?",
-      "options": {
+      "categoria": "difícil",
+      "enunciado": "Segundo o DSM-5-TR, quantos sintomas são necessários para diagnosticar Transtorno por Uso de Álcool?",
+      "alternativas": {
         "A": "Pelo menos 1",
         "B": "Pelo menos 2",
         "C": "Pelo menos 5",
         "D": "Pelo menos 10"
       },
-      "correct": "B",
-      "explanation": "O DSM-5-TR exige pelo menos 2 critérios em 12 meses."
+      "resposta": "B",
+      "explicacao": "O diagnóstico exige 2 ou mais critérios dentro de 12 meses."
     },
     {
       "id": "D12",
-      "difficulty": "difícil",
-      "tags": ["alucinógenos"],
-      "question": "Os alucinógenos (como LSD) não apresentam qual característica?",
-      "options": {
+      "categoria": "difícil",
+      "enunciado": "Os alucinógenos, como o LSD, NÃO apresentam qual das características abaixo?",
+      "alternativas": {
         "A": "Alterações perceptuais",
         "B": "Dependência física e abstinência",
         "C": "Flashbacks",
         "D": "Intoxicação com ansiedade"
       },
-      "correct": "B",
-      "explanation": "Alucinógenos não causam dependência física nem abstinência."
+      "resposta": "B",
+      "explicacao": "Alucinógenos clássicos não produzem dependência física nem síndrome de abstinência."
     },
     {
       "id": "D13",
-      "difficulty": "difícil",
-      "tags": ["nicotina", "comorbidades"],
-      "question": "Qual porcentagem de pacientes com Transtorno Bipolar I é fumante?",
-      "options": {
+      "categoria": "difícil",
+      "enunciado": "Qual porcentagem de pacientes com Transtorno Bipolar I são fumantes?",
+      "alternativas": {
         "A": "50% dos ambulatoriais",
         "B": "70%",
         "C": "90% de esquizofrênicos",
         "D": "15% já usou nicotina"
       },
-      "correct": "B",
-      "explanation": "Cerca de 70% dos pacientes com TB I fumam."
+      "resposta": "B",
+      "explicacao": "Cerca de 70% dos pacientes com TB I são fumantes."
     },
     {
       "id": "D14",
-      "difficulty": "difícil",
-      "tags": ["abstinência", "opioides"],
-      "question": "Qual sintoma é típico da abstinência (e não intoxicação) por opioides?",
-      "options": {
+      "categoria": "difícil",
+      "enunciado": "Qual sintoma é característico da abstinência — e não da intoxicação — por opioides?",
+      "alternativas": {
         "A": "Miose",
         "B": "Retardo psicomotor",
         "C": "Midríase",
         "D": "Euforia"
       },
-      "correct": "C",
-      "explanation": "A abstinência cursa com midríase; a intoxicação causa miose."
+      "resposta": "C",
+      "explicacao": "A abstinência causa midríase; a intoxicação cursa com miose."
     },
     {
       "id": "D15",
-      "difficulty": "difícil",
-      "tags": ["tratamento", "nicotina"],
-      "question": "Além da reposição de nicotina, que fármacos podem tratar abstinência?",
-      "options": {
+      "categoria": "difícil",
+      "enunciado": "Além da reposição de nicotina, quais fármacos podem auxiliar no tratamento de abstinência nicotínica?",
+      "alternativas": {
         "A": "Antipsicóticos",
         "B": "Benzodiazepínicos",
         "C": "Antagonistas de opioides",
         "D": "Antidepressivos (bupropiona, nortriptilina) e vareniclina"
       },
-      "correct": "D",
-      "explanation": "Bupropiona, nortriptilina e vareniclina são opções farmacológicas eficazes."
+      "resposta": "D",
+      "explicacao": "Bupropiona, nortriptilina e vareniclina são eficazes no tratamento da abstinência."
     }
   ]
 }
