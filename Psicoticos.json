@@ -194,7 +194,7 @@
       },
       "resposta": "B",
       "explicacao": "Estudos de neuroimagem estrutural em esquizofrenia frequentemente relatam aumento dos ventrículos laterais e redução de volume em regiões corticais e subcorticais, refletindo perda relativa de massa cerebral. Esses achados são sutis e variam entre indivíduos; sua presença apoia hipóteses de alterações neurodesenvolvimentais e degenerativas, mas o diagnóstico continua clínico."
-    }
+    },
     {
   "id": "F16",
   "categoria": "fácil",
@@ -259,7 +259,7 @@
   },
   "resposta": "C",
   "explicacao": "A psicose é definida como um transtorno mental grave em que há prejuízo da avaliação da realidade, sem que haja necessariamente rebaixamento do nível de consciência."
-}
+},
 {
   "id": "M21",
   "categoria": "médio",
@@ -324,7 +324,7 @@
   },
   "resposta": "C",
   "explicacao": "A hiperatividade da via dopaminérgica mesolímbica está associada principalmente aos sintomas positivos da esquizofrenia, como delírios e alucinações."
-}
+},
     {
   "id": "D26",
   "categoria": "difícil",
