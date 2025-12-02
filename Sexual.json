@@ -2,7 +2,7 @@
   "questoes": [
     {
       "id": "F1",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "Dentro da classificação apresentada nos excertos, qual dos seguintes transtornos pertence ao grupo das Disfunções Sexuais?",
       "alternativas": {
         "A": "Transtorno Voyeurista.",
@@ -10,12 +10,12 @@
         "C": "Transtorno Erétil.",
         "D": "Transtorno Pedofílico."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "O Transtorno Erétil é listado como uma Disfunção Sexual, diferentemente das parafilias."
     },
     {
       "id": "F2",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "A Dispareunia é definida como:",
       "alternativas": {
         "A": "Constrição involuntária do terço externo da vagina.",
@@ -23,12 +23,12 @@
         "C": "Incapacidade de alcançar ou manter ereção suficiente para o intercurso.",
         "D": "Orgasmo que ocorre antes do desejado."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "Dispareunia refere-se à dor persistente durante ou após o coito."
     },
     {
       "id": "F3",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "Qual substância atua facilitando o fluxo sanguíneo peniano ao intensificar o óxido nítrico?",
       "alternativas": {
         "A": "Fenotiazinas.",
@@ -36,12 +36,12 @@
         "C": "Antidepressivos tricíclicos.",
         "D": "Ansiolíticos benzodiazepínicos."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "A sildenafila é um intensificador do óxido nítrico que promove vasodilatação peniana."
     },
     {
       "id": "F4",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "Segundo os excertos, mais de 50% das parafilias têm início:",
       "alternativas": {
         "A": "Antes dos 10 anos.",
@@ -49,12 +49,12 @@
         "C": "Durante a fase fálica.",
         "D": "Após os 25 anos."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "A maioria das parafilias tem início antes dos 18 anos."
     },
     {
       "id": "F5",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "O Vaginismo caracteriza-se por:",
       "alternativas": {
         "A": "Ausência de fantasias sexuais por pelo menos 6 meses.",
@@ -62,12 +62,12 @@
         "C": "Contração involuntária dos músculos do terço externo da vagina.",
         "D": "Incapacidade de manter a excitação devido à redução de testosterona."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "O vaginismo envolve contração involuntária dos músculos vaginais, impedindo a penetração."
     },
     {
       "id": "M6",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "Para Freud, o baixo desejo sexual decorre principalmente de:",
       "alternativas": {
         "A": "Aumento de testosterona e estresse crônico.",
@@ -75,12 +75,12 @@
         "C": "Inibição durante a fase fálica e conflitos edípicos não resolvidos.",
         "D": "Doenças crônicas que diminuem a libido."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "Freud associava o desejo hipoativo à inibição fálica e conflitos edípicos."
     },
     {
       "id": "M7",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "Entre os homens que relatam queixas sexuais, a Ejaculação Precoce corresponde aproximadamente a:",
       "alternativas": {
         "A": "1%.",
@@ -88,12 +88,12 @@
         "C": "35–40%.",
         "D": "Mais de 50%."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "Cerca de 35 a 40% das queixas masculinas referem-se à ejaculação precoce."
     },
     {
       "id": "M8",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "A Terapia Sexual Dual se fundamenta na ideia de que:",
       "alternativas": {
         "A": "A adequação sexual depende da resolução de conflitos inconscientes.",
@@ -101,12 +101,12 @@
         "C": "O problema sexual expressa desarmonia conjugal, e a díade é o foco do tratamento.",
         "D": "A disfunção sexual decorre de anormalidades hormonais."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "A terapia de Masters e Johnson trata o casal como unidade terapêutica."
     },
     {
       "id": "M9",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "Álcool, cocaína e anfetaminas podem facilitar o início da atividade sexual por remover inibições, porém seu efeito sobre o desempenho é:",
       "alternativas": {
         "A": "Aumentar o desejo e melhorar o desempenho.",
@@ -114,12 +114,12 @@
         "C": "Prejudicar o desempenho.",
         "D": "Causar compulsão sexual grave."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "Essas substâncias reduzem a inibição, mas prejudicam o desempenho."
     },
     {
       "id": "M10",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "Qual distinção é apontada entre o Transtorno Orgásmico Primário e o Adquirido?",
       "alternativas": {
         "A": "O primário decorre de trauma e o adquirido de culpa.",
@@ -127,12 +127,12 @@
         "C": "O adquirido decorre exclusivamente de condições médicas.",
         "D": "O primário ocorre em 1% e o adquirido em 10–20%."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "O primário envolve ausência vitalícia de orgasmo; o adquirido aparece após experiências orgásticas prévias."
     },
     {
       "id": "D11",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Para o diagnóstico de Transtorno Pedofílico, o indivíduo deve:",
       "alternativas": {
         "A": "Ter pelo menos 18 anos e ser 10 anos mais velho que a vítima.",
@@ -140,12 +140,12 @@
         "C": "Ter ao menos 5 anos de diferença da vítima.",
         "D": "Ter mais de 16 anos e envolver-se com crianças abaixo de 13 anos."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "O critério exige idade mínima de 16 anos e diferença de pelo menos 5 anos."
     },
     {
       "id": "D12",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Segundo a visão psicanalítica, no fetichismo o sapato simboliza:",
       "alternativas": {
         "A": "O objeto transvéstico.",
@@ -153,12 +153,12 @@
         "C": "Uma defesa contra punição.",
         "D": "Hostilidade contra figuras masculinas."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "O fetiche funciona como substituto simbólico do falo ausente."
     },
     {
       "id": "D13",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Uma das primeiras restrições da Terapia Sexual Dual é:",
       "alternativas": {
         "A": "Proibir discussões sobre o problema sexual.",
@@ -166,12 +166,12 @@
         "C": "Proibir toda atividade sexual não prescrita, incluindo o intercurso.",
         "D": "Restringir manifestações emocionais na sessão."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "A terapia restringe carícias e intercurso no início para reduzir ansiedade de desempenho."
     },
     {
       "id": "D14",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Qual grupo farmacológico pode retardar a ejaculação e causar disfunção orgástica?",
       "alternativas": {
         "A": "Opioides e benzodiazepínicos.",
@@ -179,12 +179,12 @@
         "C": "Anti-hipertensivos, fenotiazinas, antidepressivos tricíclicos e ISRS.",
         "D": "Álcool e anfetaminas."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "Esses fármacos estão associados a disfunção orgástica e redução do desejo."
     },
     {
       "id": "D15",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "O termo que designa a busca de orgasmo associada à hipóxia por asfixia é:",
       "alternativas": {
         "A": "Zoofilia.",
@@ -192,7 +192,7 @@
         "C": "Necrofilia.",
         "D": "Hipoxifilia."
       },
-      "correta": "D",
+      "resposta": "D",
       "explicacao": "Hipoxifilia refere-se ao uso da redução de oxigênio como estímulo sexual."
     }
   ]
