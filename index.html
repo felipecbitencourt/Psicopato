@@ -3,231 +3,269 @@
 <head>
   <meta charset="UTF-8">
   <title>Quiz Interativo de Psicologia</title>
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      margin: 0;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
     .hidden { display: none; }
-    .question { margin-bottom: 20px; }
-    button { margin: 5px; padding: 10px 20px; }
-    .stats { margin-top: 20px; }
-    .timer { font-weight: bold; color: red; }
+
+    #menu, #quiz, #resultado {
+      background: rgba(0,0,0,0.3);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    input, select, button {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      cursor: pointer;
+      background: #22c55e;
+      color: black;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #16a34a;
+    }
+
+    .stats {
+      margin-bottom: 10px;
+    }
+
+    .timer {
+      font-weight: bold;
+      color: #facc15;
+    }
+
+    .question {
+      font-size: 20px;
+      margin-bottom: 15px;
+      animation: fade 0.5s ease;
+    }
+
+    #optionsContainer button {
+      width: 100%;
+      margin: 6px 0;
+      background: #0ea5e9;
+      color: white;
+    }
+
+    #optionsContainer button:hover {
+      background: #0369a1;
+    }
+
+    .certo {
+      background: #22c55e !important;
+    }
+
+    .errado {
+      background: #ef4444 !important;
+    }
+
+    .progress {
+      height: 10px;
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: #22c55e;
+      transition: 0.3s;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
+
 <body>
 
-<h1>Quiz Interativo de Psicologia</h1>
+<h1>🧠 Quiz de Psicologia</h1>
 
 <div id="menu">
-  <h2>Configurações do Quiz</h2>
-  
-  <label for="tema">Escolha o Tema:</label>
-<select id="tema">
-  <option value="Controle_impulso.json">Controle_Impulso</option>
-  <option value="Demencias_delirium.json">Demencias_delirium</option>
-  <option value="Humor.json">Humor</option>
-  <option value="Suicidio.json">Suicidio</option>
-  <option value="Abuso_substancias.json">Abuso_substancias</option>
-  <option value="Psicoticos.json">Psicoticos</option>
-  <option value="Sexual.json">Sexual</option>
-</select><br><br>
+  <h2>Configurações</h2>
 
-  <label for="dificuldade">Nível de dificuldade:</label>
+  <select id="tema">
+    <option value="Controle_impulso.json">Controle do Impulso</option>
+    <option value="Demencias_delirium.json">Demências</option>
+    <option value="Humor.json">Humor</option>
+    <option value="Suicidio.json">Suicídio</option>
+    <option value="Abuso_substancias.json">Substâncias</option>
+    <option value="Psicoticos.json">Psicóticos</option>
+    <option value="Sexual.json">Sexual</option>
+  </select><br>
+
   <select id="dificuldade">
+    <option value="todos">Todos</option>
     <option value="fácil">Fácil</option>
     <option value="médio">Médio</option>
     <option value="difícil">Difícil</option>
-    <option value="todos">Todos</option>
-  </select><br><br>
+  </select><br>
 
-  <label for="numQuestoes">Número total de questões:</label>
-  <input type="number" id="numQuestoes" min="1" value="5"><br><br>
+  <input type="number" id="numQuestoes" value="5"><br>
 
-  <label for="tempoTotal">Tempo total (min, 0 = ilimitado):</label>
-  <input type="number" id="tempoTotal" min="0" value="0"><br><br>
+  <input type="number" id="tempoQuestao" placeholder="Tempo por questão (seg)"><br>
 
-  <label for="tempoQuestao">Tempo por questão (seg, 0 = ilimitado):</label>
-  <input type="number" id="tempoQuestao" min="0" value="0"><br><br>
-
-  <button id="startBtn">Iniciar Quiz</button>
+  <button id="startBtn">Iniciar</button>
 </div>
 
 <div id="quiz" class="hidden">
+  <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+
   <div class="stats">
-    Questão: <span id="questaoAtual">0</span> / <span id="totalQuestoes">0</span> |
-    Acertos: <span id="acertos">0</span> |
-    Erros: <span id="erros">0</span> |
-    Restantes: <span id="restantes">0</span> |
+    Questão: <span id="questaoAtual">0</span> /
+    <span id="totalQuestoes">0</span> |
+    Pontos: <span id="pontos">0</span> |
     <span class="timer" id="timer"></span>
   </div>
 
   <div id="questionContainer" class="question"></div>
-
   <div id="optionsContainer"></div>
 
   <button id="nextBtn" class="hidden">Próxima</button>
 </div>
 
 <div id="resultado" class="hidden">
-  <h2>Quiz Finalizado!</h2>
-  <p>Acertos: <span id="finalAcertos"></span></p>
-  <p>Erros: <span id="finalErros"></span></p>
+  <h2>🏁 Final do Jogo</h2>
+  <p>Pontos: <span id="finalPontos"></span></p>
+  <p>Desempenho: <span id="desempenho"></span>%</p>
   <button id="restartBtn">Reiniciar</button>
 </div>
 
 <script>
 let quizData = [];
 let currentQuestion = 0;
-let acertos = 0;
-let erros = 0;
-let timerInterval;
-let questionTimerInterval;
+let pontos = 0;
+let questionTimer;
 
-document.getElementById('startBtn').addEventListener('click', iniciarQuiz);
-document.getElementById('nextBtn').addEventListener('click', proximaQuestao);
-document.getElementById('restartBtn').addEventListener('click', reiniciarQuiz);
+startBtn.onclick = iniciarQuiz;
+nextBtn.onclick = proximaQuestao;
+restartBtn.onclick = () => location.reload();
 
 async function iniciarQuiz() {
-  const tema = document.getElementById('tema').value;
-  const dificuldade = document.getElementById('dificuldade').value;
-  const numQuestoes = parseInt(document.getElementById('numQuestoes').value);
-  const tempoTotal = parseInt(document.getElementById('tempoTotal').value) * 60; // em segundos
-  const tempoQuestao = parseInt(document.getElementById('tempoQuestao').value);
+  const tema = temaSelect.value;
+  const dificuldade = dificuldadeSelect.value;
+  const num = +numQuestoes.value;
 
-  // Carregar JSON
   const res = await fetch(tema);
   const data = await res.json();
 
-  // Filtrar por dificuldade
-  quizData = data.questoes.filter(q => dificuldade === 'todos' || q.categoria === dificuldade);
+  quizData = data.questoes.filter(q =>
+    dificuldade === "todos" || q.categoria === dificuldade
+  );
 
-  // Embaralhar e limitar número de questões
-  quizData = shuffleArray(quizData).slice(0, numQuestoes);
+  quizData = quizData.sort(() => Math.random() - 0.5).slice(0, num);
 
-  // Reset contadores
+  totalQuestoes.textContent = quizData.length;
   currentQuestion = 0;
-  acertos = 0;
-  erros = 0;
+  pontos = 0;
 
-  document.getElementById('menu').classList.add('hidden');
-  document.getElementById('quiz').classList.remove('hidden');
+  menu.classList.add("hidden");
+  quiz.classList.remove("hidden");
 
-  document.getElementById('totalQuestoes').textContent = quizData.length;
-  document.getElementById('restantes').textContent = quizData.length;
-
-  // Iniciar timer total
-  if (tempoTotal > 0) {
-    let remaining = tempoTotal;
-    document.getElementById('timer').textContent = formatTime(remaining);
-    timerInterval = setInterval(() => {
-      remaining--;
-      document.getElementById('timer').textContent = formatTime(remaining);
-      if (remaining <= 0) {
-        clearInterval(timerInterval);
-        finalizarQuiz();
-      }
-    }, 1000);
-  }
-
-  mostrarQuestao(tempoQuestao);
+  mostrarQuestao();
 }
 
-function mostrarQuestao(tempoQuestao) {
+function mostrarQuestao() {
   const q = quizData[currentQuestion];
-  document.getElementById('questaoAtual').textContent = currentQuestion + 1;
+  questaoAtual.textContent = currentQuestion + 1;
+  pontosSpan.textContent = pontos;
 
-  const container = document.getElementById('questionContainer');
-  container.innerHTML = `<strong>${q.enunciado}</strong>`;
+  progressBar.style.width = ((currentQuestion) / quizData.length) * 100 + "%";
 
-  const optionsContainer = document.getElementById('optionsContainer');
-  optionsContainer.innerHTML = '';
-  for (const key in q.alternativas) {
-    const btn = document.createElement('button');
-    btn.textContent = `${key}: ${q.alternativas[key]}`;
-    btn.addEventListener('click', () => checarResposta(key));
+  questionContainer.innerHTML = q.enunciado;
+  optionsContainer.innerHTML = "";
+
+  for (let key in q.alternativas) {
+    const btn = document.createElement("button");
+    btn.textContent = key + ") " + q.alternativas[key];
+    btn.onclick = () => checarResposta(key, btn);
     optionsContainer.appendChild(btn);
   }
 
-  // Timer por questão
-  if (tempoQuestao > 0) {
-    let remaining = tempoQuestao;
-    document.getElementById('timer').textContent = formatTime(remaining);
-    questionTimerInterval = setInterval(() => {
-      remaining--;
-      document.getElementById('timer').textContent = formatTime(remaining);
-      if (remaining <= 0) {
-        clearInterval(questionTimerInterval);
-        erros++;
-        atualizarStats();
-        mostrarExplicacao(false);
-      }
-    }, 1000);
-  }
+  iniciarTimer();
 }
 
-function checarResposta(respostaEscolhida) {
-  clearInterval(questionTimerInterval);
+function iniciarTimer() {
+  const tempo = +tempoQuestao.value;
+  if (!tempo) return;
 
-  const q = quizData[currentQuestion];
-  const correto = q.resposta;
-  if (respostaEscolhida === correto) {
-    acertos++;
-    mostrarExplicacao(true);
+  let t = tempo;
+  timer.textContent = `⏳ ${t}s`;
+
+  clearInterval(questionTimer);
+  questionTimer = setInterval(() => {
+    t--;
+    timer.textContent = `⏳ ${t}s`;
+    if (t === 0) {
+      clearInterval(questionTimer);
+      proximaQuestao();
+    }
+  }, 1000);
+}
+
+function checarResposta(resposta, btn) {
+  clearInterval(questionTimer);
+  const correta = quizData[currentQuestion].resposta;
+
+  if (resposta === correta) {
+    pontos += 10;
+    btn.classList.add("certo");
   } else {
-    erros++;
-    mostrarExplicacao(false);
+    btn.classList.add("errado");
   }
-  atualizarStats();
-}
 
-function mostrarExplicacao(acertou) {
-  const q = quizData[currentQuestion];
-  const container = document.getElementById('questionContainer');
-  container.innerHTML += `<p><strong>Resposta correta:</strong> ${q.resposta} - ${q.alternativas[q.resposta]}</p>`;
-  container.innerHTML += `<p><strong>Explicação:</strong> ${q.explicacao}</p>`;
+  document.querySelectorAll("#optionsContainer button")
+    .forEach(b => b.disabled = true);
 
-  document.getElementById('optionsContainer').innerHTML = '';
-  document.getElementById('nextBtn').classList.remove('hidden');
+  nextBtn.classList.remove("hidden");
 }
 
 function proximaQuestao() {
-  document.getElementById('nextBtn').classList.add('hidden');
   currentQuestion++;
+  nextBtn.classList.add("hidden");
+
   if (currentQuestion >= quizData.length) {
     finalizarQuiz();
   } else {
-    const tempoQuestao = parseInt(document.getElementById('tempoQuestao').value);
-    mostrarQuestao(tempoQuestao);
+    mostrarQuestao();
   }
 }
 
 function finalizarQuiz() {
-  clearInterval(timerInterval);
-  clearInterval(questionTimerInterval);
-  document.getElementById('quiz').classList.add('hidden');
-  document.getElementById('resultado').classList.remove('hidden');
-  document.getElementById('finalAcertos').textContent = acertos;
-  document.getElementById('finalErros').textContent = erros;
-}
+  quiz.classList.add("hidden");
+  resultado.classList.remove("hidden");
 
-function reiniciarQuiz() {
-  document.getElementById('resultado').classList.add('hidden');
-  document.getElementById('menu').classList.remove('hidden');
-}
-
-// Helpers
-function shuffleArray(array) {
-  return array.sort(() => Math.random() - 0.5);
-}
-
-function atualizarStats() {
-  document.getElementById('acertos').textContent = acertos;
-  document.getElementById('erros').textContent = erros;
-  document.getElementById('restantes').textContent = quizData.length - currentQuestion - 1;
-}
-
-function formatTime(segundos) {
-  const min = Math.floor(segundos / 60);
-  const sec = segundos % 60;
-  return `${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+  finalPontos.textContent = pontos;
+  desempenho.textContent = Math.round((pontos / (quizData.length * 10)) * 100);
 }
 </script>
 
