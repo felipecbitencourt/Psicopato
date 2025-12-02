@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Interativo de Psicologia</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .hidden { display: none; }
+    .question { margin-bottom: 20px; }
+    button { margin: 5px; padding: 10px 20px; }
+    .stats { margin-top: 20px; }
+    .timer { font-weight: bold; color: red; }
+  </style>
+</head>
+<body>
+
+<h1>Quiz Interativo de Psicologia</h1>
+
+<div id="menu">
+  <h2>Configurações do Quiz</h2>
+  
+  <label for="tema">Escolha o Tema:</label>
+  <select id="tema">
+    <option value="controle_impulso.json">Controle de Impulso</option>
+    <option value="Demencias_delirium.json">Demências e Delirium</option>
+    <option value="Humor.json">Humor</option>
+    <option value="Suicídio.json">Suicídio</option>
+    <option value="abuso_substancias.json">Abuso de Substâncias</option>
+    <option value="psicoticos.json">Psicóticos</option>
+    <option value="sexual.json">Sexual</option>
+  </select><br><br>
+
+  <label for="dificuldade">Nível de dificuldade:</label>
+  <select id="dificuldade">
+    <option value="fácil">Fácil</option>
+    <option value="médio">Médio</option>
+    <option value="difícil">Difícil</option>
+    <option value="todos">Todos</option>
+  </select><br><br>
+
+  <label for="numQuestoes">Número total de questões:</label>
+  <input type="number" id="numQuestoes" min="1" value="5"><br><br>
+
+  <label for="tempoTotal">Tempo total (min, 0 = ilimitado):</label>
+  <input type="number" id="tempoTotal" min="0" value="0"><br><br>
+
+  <label for="tempoQuestao">Tempo por questão (seg, 0 = ilimitado):</label>
+  <input type="number" id="tempoQuestao" min="0" value="0"><br><br>
+
+  <button id="startBtn">Iniciar Quiz</button>
+</div>
+
+<div id="quiz" class="hidden">
+  <div class="stats">
+    Questão: <span id="questaoAtual">0</span> / <span id="totalQuestoes">0</span> |
+    Acertos: <span id="acertos">0</span> |
+    Erros: <span id="erros">0</span> |
+    Restantes: <span id="restantes">0</span> |
+    <span class="timer" id="timer"></span>
+  </div>
+
+  <div id="questionContainer" class="question"></div>
+
+  <div id="optionsContainer"></div>
+
+  <button id="nextBtn" class="hidden">Próxima</button>
+</div>
+
+<div id="resultado" class="hidden">
+  <h2>Quiz Finalizado!</h2>
+  <p>Acertos: <span id="finalAcertos"></span></p>
+  <p>Erros: <span id="finalErros"></span></p>
+  <button id="restartBtn">Reiniciar</button>
+</div>
+
+<script>
+let quizData = [];
+let currentQuestion = 0;
+let acertos = 0;
+let erros = 0;
+let timerInterval;
+let questionTimerInterval;
+
+document.getElementById('startBtn').addEventListener('click', iniciarQuiz);
+document.getElementById('nextBtn').addEventListener('click', proximaQuestao);
+document.getElementById('restartBtn').addEventListener('click', reiniciarQuiz);
+
+async function iniciarQuiz() {
+  const tema = document.getElementById('tema').value;
+  const dificuldade = document.getElementById('dificuldade').value;
+  const numQuestoes = parseInt(document.getElementById('numQuestoes').value);
+  const tempoTotal = parseInt(document.getElementById('tempoTotal').value) * 60; // em segundos
+  const tempoQuestao = parseInt(document.getElementById('tempoQuestao').value);
+
+  // Carregar JSON
+  const res = await fetch(tema);
+  const data = await res.json();
+
+  // Filtrar por dificuldade
+  quizData = data.questoes.filter(q => dificuldade === 'todos' || q.categoria === dificuldade);
+
+  // Embaralhar e limitar número de questões
+  quizData = shuffleArray(quizData).slice(0, numQuestoes);
+
+  // Reset contadores
+  currentQuestion = 0;
+  acertos = 0;
+  erros = 0;
+
+  document.getElementById('menu').classList.add('hidden');
+  document.getElementById('quiz').classList.remove('hidden');
+
+  document.getElementById('totalQuestoes').textContent = quizData.length;
+  document.getElementById('restantes').textContent = quizData.length;
+
+  // Iniciar timer total
+  if (tempoTotal > 0) {
+    let remaining = tempoTotal;
+    document.getElementById('timer').textContent = formatTime(remaining);
+    timerInterval = setInterval(() => {
+      remaining--;
+      document.getElementById('timer').textContent = formatTime(remaining);
+      if (remaining <= 0) {
+        clearInterval(timerInterval);
+        finalizarQuiz();
+      }
+    }, 1000);
+  }
+
+  mostrarQuestao(tempoQuestao);
+}
+
+function mostrarQuestao(tempoQuestao) {
+  const q = quizData[currentQuestion];
+  document.getElementById('questaoAtual').textContent = currentQuestion + 1;
+
+  const container = document.getElementById('questionContainer');
+  container.innerHTML = `<strong>${q.enunciado}</strong>`;
+
+  const optionsContainer = document.getElementById('optionsContainer');
+  optionsContainer.innerHTML = '';
+  for (const key in q.alternativas) {
+    const btn = document.createElement('button');
+    btn.textContent = `${key}: ${q.alternativas[key]}`;
+    btn.addEventListener('click', () => checarResposta(key));
+    optionsContainer.appendChild(btn);
+  }
+
+  // Timer por questão
+  if (tempoQuestao > 0) {
+    let remaining = tempoQuestao;
+    document.getElementById('timer').textContent = formatTime(remaining);
+    questionTimerInterval = setInterval(() => {
+      remaining--;
+      document.getElementById('timer').textContent = formatTime(remaining);
+      if (remaining <= 0) {
+        clearInterval(questionTimerInterval);
+        erros++;
+        atualizarStats();
+        mostrarExplicacao(false);
+      }
+    }, 1000);
+  }
+}
+
+function checarResposta(respostaEscolhida) {
+  clearInterval(questionTimerInterval);
+
+  const q = quizData[currentQuestion];
+  const correto = q.resposta;
+  if (respostaEscolhida === correto) {
+    acertos++;
+    mostrarExplicacao(true);
+  } else {
+    erros++;
+    mostrarExplicacao(false);
+  }
+  atualizarStats();
+}
+
+function mostrarExplicacao(acertou) {
+  const q = quizData[currentQuestion];
+  const container = document.getElementById('questionContainer');
+  container.innerHTML += `<p><strong>Resposta correta:</strong> ${q.resposta} - ${q.alternativas[q.resposta]}</p>`;
+  container.innerHTML += `<p><strong>Explicação:</strong> ${q.explicacao}</p>`;
+
+  document.getElementById('optionsContainer').innerHTML = '';
+  document.getElementById('nextBtn').classList.remove('hidden');
+}
+
+function proximaQuestao() {
+  document.getElementById('nextBtn').classList.add('hidden');
+  currentQuestion++;
+  if (currentQuestion >= quizData.length) {
+    finalizarQuiz();
+  } else {
+    const tempoQuestao = parseInt(document.getElementById('tempoQuestao').value);
+    mostrarQuestao(tempoQuestao);
+  }
+}
+
+function finalizarQuiz() {
+  clearInterval(timerInterval);
+  clearInterval(questionTimerInterval);
+  document.getElementById('quiz').classList.add('hidden');
+  document.getElementById('resultado').classList.remove('hidden');
+  document.getElementById('finalAcertos').textContent = acertos;
+  document.getElementById('finalErros').textContent = erros;
+}
+
+function reiniciarQuiz() {
+  document.getElementById('resultado').classList.add('hidden');
+  document.getElementById('menu').classList.remove('hidden');
+}
+
+// Helpers
+function shuffleArray(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
+
+function atualizarStats() {
+  document.getElementById('acertos').textContent = acertos;
+  document.getElementById('erros').textContent = erros;
+  document.getElementById('restantes').textContent = quizData.length - currentQuestion - 1;
+}
+
+function formatTime(segundos) {
+  const min = Math.floor(segundos / 60);
+  const sec = segundos % 60;
+  return `${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+}
+</script>
+
+</body>
+</html>
