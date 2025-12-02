@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+h1 { margin-bottom: 15px; }
+
+.hidden { display: none; }
+
+#menu, #quiz, #resultado {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  background: #22c55e;
+  color: black;
+  font-weight: bold;
+}
+
+button:hover { opacity: 0.8; }
+
+.progress {
+  height: 10px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #22c55e;
+  transition: 0.3s;
+}
+
+#optionsContainer button {
+  width: 100%;
+  margin: 6px 0;
+  background: #0ea5e9;
+  color: white;
+}
+
+.certo { background: #22c55e !important; }
+.errado { background: #ef4444 !important; }
+
+.timer {
+  font-weight: bold;
+  color: #facc15;
+}
+
+#explicacaoBox {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+#erroCarregamento {
+  color: #ffb4b4;
+}
