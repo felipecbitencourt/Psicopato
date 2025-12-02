@@ -1,5 +1,5 @@
 {
-  "questoes": [
+   "questoes": [
     {
       "id": "F1",
       "categoria": "fácil",
@@ -10,7 +10,7 @@
         "C": "Uma condição médica não psiquiátrica.",
         "D": "Exclusivamente doenças neurodegenerativas."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "A síndrome cerebral orgânica descreve déficits cognitivos decorrentes de uma condição médica não psiquiátrica."
     },
     {
@@ -23,7 +23,7 @@
         "C": "Nível de consciência.",
         "D": "Capacidade visuoespacial."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "O Delirium envolve alteração da atenção associada a alteração do nível de consciência."
     },
     {
@@ -36,7 +36,7 @@
         "C": "20%.",
         "D": "50%."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "Cerca de 20% dos idosos acima de 80 anos apresentam algum tipo de demência."
     },
     {
@@ -49,7 +49,7 @@
         "C": "Demência.",
         "D": "Delirium."
       },
-      "correta": "D",
+      "resposta": "D",
       "explicacao": "Delirium é um quadro de instalação aguda e geralmente reversível."
     },
     {
@@ -62,7 +62,7 @@
         "C": "Transtornos amnésticos.",
         "D": "Alucinose orgânica."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "Os transtornos cognitivos incluem delirium, demência e transtornos amnésticos."
     },
     {
@@ -75,7 +75,7 @@
         "C": "Julgamento e insight.",
         "D": "Início insidioso e progressivo."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "Julgamento e insight tendem a permanecer preservados por algum tempo na Demência Vascular."
     },
     {
@@ -88,7 +88,7 @@
         "C": "30%.",
         "D": "50%."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "Aproximadamente 15% das demências são reversíveis quando a causa é tratável."
     },
     {
@@ -101,7 +101,7 @@
         "C": "30%.",
         "D": "40–50%."
       },
-      "correta": "D",
+      "resposta": "D",
       "explicacao": "A prevalência de Delirium em UTIs cardíacas é estimada em 40–50%."
     },
     {
@@ -114,7 +114,7 @@
         "C": "Agnosia.",
         "D": "Anosognosia."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "Agnosia é a perda da capacidade de reconhecer objetos mesmo com sensações preservadas."
     },
     {
@@ -127,7 +127,7 @@
         "C": "40–50%.",
         "D": "Acima de 50%."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "Entre 30% e 40% dos pacientes com demência apresentam delírios."
     },
     {
@@ -140,7 +140,7 @@
         "C": "Degeneração de neurônios colinérgicos e redução do metabolismo da acetilcolina.",
         "D": "Aumento da atividade da acetilcolinesterase."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "Alzheimer envolve degeneração colinérgica e diminuição do metabolismo de acetilcolina."
     },
     {
@@ -153,7 +153,7 @@
         "C": "Estabilidade até remissão.",
         "D": "Curso explicado por transtorno neurocognitivo prévio."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "O Delirium tipicamente flutua ao longo do dia."
     },
     {
@@ -166,7 +166,7 @@
         "C": "Início mais precoce que na Doença de Alzheimer.",
         "D": "Preservação do julgamento e insight."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "A Doença por Corpos de Lewy cursa com alucinações visuais frequentes e quedas."
     },
     {
@@ -179,7 +179,7 @@
         "C": "Doença de Parkinson.",
         "D": "Doença priônica."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "A demência associada à Doença de Parkinson é subcortical."
     },
     {
@@ -192,7 +192,7 @@
         "C": "Delirium.",
         "D": "Envelhecimento normal."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "O diagnóstico de TNC Maior exclui déficits cognitivos ocorrendo apenas durante o Delirium."
     }
   ]
