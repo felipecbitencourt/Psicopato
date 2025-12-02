@@ -14,9 +14,7 @@
       text-align: center;
     }
 
-    h1, h2 {
-      margin-bottom: 10px;
-    }
+    h1 { margin-bottom: 15px; }
 
     .hidden { display: none; }
 
@@ -42,54 +40,16 @@
       background: #22c55e;
       color: black;
       font-weight: bold;
-      transition: 0.3s;
     }
 
-    button:hover {
-      transform: scale(1.05);
-      background: #16a34a;
-    }
-
-    .stats {
-      margin-bottom: 10px;
-    }
-
-    .timer {
-      font-weight: bold;
-      color: #facc15;
-    }
-
-    .question {
-      font-size: 20px;
-      margin-bottom: 15px;
-      animation: fade 0.5s ease;
-    }
-
-    #optionsContainer button {
-      width: 100%;
-      margin: 6px 0;
-      background: #0ea5e9;
-      color: white;
-    }
-
-    #optionsContainer button:hover {
-      background: #0369a1;
-    }
-
-    .certo {
-      background: #22c55e !important;
-    }
-
-    .errado {
-      background: #ef4444 !important;
-    }
+    button:hover { opacity: 0.8; }
 
     .progress {
       height: 10px;
-      background: #ddd;
+      background: #fff;
       border-radius: 10px;
       overflow: hidden;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .progress-bar {
@@ -99,9 +59,19 @@
       transition: 0.3s;
     }
 
-    @keyframes fade {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+    #optionsContainer button {
+      width: 100%;
+      margin: 6px 0;
+      background: #0ea5e9;
+      color: white;
+    }
+
+    .certo { background: #22c55e !important; }
+    .errado { background: #ef4444 !important; }
+
+    .timer {
+      font-weight: bold;
+      color: #facc15;
     }
   </style>
 </head>
@@ -113,7 +83,7 @@
 <div id="menu">
   <h2>Configurações</h2>
 
-  <select id="tema">
+  <select id="temaSelect">
     <option value="Controle_impulso.json">Controle do Impulso</option>
     <option value="Demencias_delirium.json">Demências</option>
     <option value="Humor.json">Humor</option>
@@ -123,7 +93,7 @@
     <option value="Sexual.json">Sexual</option>
   </select><br>
 
-  <select id="dificuldade">
+  <select id="dificuldadeSelect">
     <option value="todos">Todos</option>
     <option value="fácil">Fácil</option>
     <option value="médio">Médio</option>
@@ -131,23 +101,25 @@
   </select><br>
 
   <input type="number" id="numQuestoes" value="5"><br>
-
   <input type="number" id="tempoQuestao" placeholder="Tempo por questão (seg)"><br>
 
   <button id="startBtn">Iniciar</button>
+  <p id="erroCarregamento" style="color:#ffb4b4;"></p>
 </div>
 
 <div id="quiz" class="hidden">
-  <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+  <div class="progress">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
 
   <div class="stats">
     Questão: <span id="questaoAtual">0</span> /
     <span id="totalQuestoes">0</span> |
-    Pontos: <span id="pontos">0</span> |
+    Pontos: <span id="pontosSpan">0</span> |
     <span class="timer" id="timer"></span>
   </div>
 
-  <div id="questionContainer" class="question"></div>
+  <div id="questionContainer"></div>
   <div id="optionsContainer"></div>
 
   <button id="nextBtn" class="hidden">Próxima</button>
@@ -161,48 +133,89 @@
 </div>
 
 <script>
+const startBtn = document.getElementById("startBtn");
+const nextBtn = document.getElementById("nextBtn");
+const restartBtn = document.getElementById("restartBtn");
+
+const menu = document.getElementById("menu");
+const quiz = document.getElementById("quiz");
+const resultado = document.getElementById("resultado");
+
+const temaSelect = document.getElementById("temaSelect");
+const dificuldadeSelect = document.getElementById("dificuldadeSelect");
+
+const numQuestoes = document.getElementById("numQuestoes");
+const tempoQuestao = document.getElementById("tempoQuestao");
+
+const questaoAtual = document.getElementById("questaoAtual");
+const totalQuestoes = document.getElementById("totalQuestoes");
+const pontosSpan = document.getElementById("pontosSpan");
+const timer = document.getElementById("timer");
+
+const questionContainer = document.getElementById("questionContainer");
+const optionsContainer = document.getElementById("optionsContainer");
+
+const progressBar = document.getElementById("progressBar");
+
+const finalPontos = document.getElementById("finalPontos");
+const desempenho = document.getElementById("desempenho");
+
+const erroCarregamento = document.getElementById("erroCarregamento");
+
 let quizData = [];
 let currentQuestion = 0;
 let pontos = 0;
 let questionTimer;
 
-startBtn.onclick = iniciarQuiz;
-nextBtn.onclick = proximaQuestao;
-restartBtn.onclick = () => location.reload();
+startBtn.addEventListener("click", iniciarQuiz);
+nextBtn.addEventListener("click", proximaQuestao);
+restartBtn.addEventListener("click", () => location.reload());
 
 async function iniciarQuiz() {
+  erroCarregamento.textContent = "";
+
   const tema = temaSelect.value;
   const dificuldade = dificuldadeSelect.value;
-  const num = +numQuestoes.value;
+  const num = parseInt(numQuestoes.value);
 
-  const res = await fetch(tema);
-  const data = await res.json();
+  try {
+    const res = await fetch(tema);
+    if (!res.ok) throw new Error("Arquivo JSON não encontrado!");
 
-  quizData = data.questoes.filter(q =>
-    dificuldade === "todos" || q.categoria === dificuldade
-  );
+    const data = await res.json();
 
-  quizData = quizData.sort(() => Math.random() - 0.5).slice(0, num);
+    quizData = data.questoes.filter(q =>
+      dificuldade === "todos" || q.categoria === dificuldade
+    );
 
-  totalQuestoes.textContent = quizData.length;
-  currentQuestion = 0;
-  pontos = 0;
+    quizData = quizData.sort(() => Math.random() - 0.5).slice(0, num);
 
-  menu.classList.add("hidden");
-  quiz.classList.remove("hidden");
+    totalQuestoes.textContent = quizData.length;
+    currentQuestion = 0;
+    pontos = 0;
 
-  mostrarQuestao();
+    menu.classList.add("hidden");
+    quiz.classList.remove("hidden");
+
+    mostrarQuestao();
+  } catch (err) {
+    erroCarregamento.textContent = "❌ Erro ao carregar os arquivos. Verifique se os .json estão no mesmo repositório!";
+    console.error(err);
+  }
 }
 
 function mostrarQuestao() {
   const q = quizData[currentQuestion];
+
   questaoAtual.textContent = currentQuestion + 1;
   pontosSpan.textContent = pontos;
 
-  progressBar.style.width = ((currentQuestion) / quizData.length) * 100 + "%";
+  progressBar.style.width =
+    ((currentQuestion) / quizData.length) * 100 + "%";
 
   questionContainer.innerHTML = q.enunciado;
   optionsContainer.innerHTML = "";
+  nextBtn.classList.add("hidden");
 
   for (let key in q.alternativas) {
     const btn = document.createElement("button");
@@ -215,8 +228,11 @@ function mostrarQuestao() {
 }
 
 function iniciarTimer() {
-  const tempo = +tempoQuestao.value;
-  if (!tempo) return;
+  const tempo = parseInt(tempoQuestao.value);
+  if (!tempo) {
+    timer.textContent = "";
+    return;
+  }
 
   let t = tempo;
   timer.textContent = `⏳ ${t}s`;
@@ -225,6 +241,7 @@ function iniciarTimer() {
   questionTimer = setInterval(() => {
     t--;
     timer.textContent = `⏳ ${t}s`;
+
     if (t === 0) {
       clearInterval(questionTimer);
       proximaQuestao();
@@ -234,6 +251,7 @@ function iniciarTimer() {
 
 function checarResposta(resposta, btn) {
   clearInterval(questionTimer);
+
   const correta = quizData[currentQuestion].resposta;
 
   if (resposta === correta) {
@@ -243,7 +261,8 @@ function checarResposta(resposta, btn) {
     btn.classList.add("errado");
   }
 
-  document.querySelectorAll("#optionsContainer button")
+  document
+    .querySelectorAll("#optionsContainer button")
     .forEach(b => b.disabled = true);
 
   nextBtn.classList.remove("hidden");
@@ -251,7 +270,6 @@ function checarResposta(resposta, btn) {
 
 function proximaQuestao() {
   currentQuestion++;
-  nextBtn.classList.add("hidden");
 
   if (currentQuestion >= quizData.length) {
     finalizarQuiz();
@@ -265,7 +283,8 @@ function finalizarQuiz() {
   resultado.classList.remove("hidden");
 
   finalPontos.textContent = pontos;
-  desempenho.textContent = Math.round((pontos / (quizData.length * 10)) * 100);
+  desempenho.textContent =
+    Math.round((pontos / (quizData.length * 10)) * 100);
 }
 </script>
 
