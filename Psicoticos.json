@@ -195,5 +195,202 @@
       "resposta": "B",
       "explicacao": "Estudos de neuroimagem estrutural em esquizofrenia frequentemente relatam aumento dos ventrículos laterais e redução de volume em regiões corticais e subcorticais, refletindo perda relativa de massa cerebral. Esses achados são sutis e variam entre indivíduos; sua presença apoia hipóteses de alterações neurodesenvolvimentais e degenerativas, mas o diagnóstico continua clínico."
     }
+    {
+  "id": "F16",
+  "categoria": "fácil",
+  "enunciado": "Qual conjunto de sintomas caracteriza a fase ativa da Esquizofrenia segundo o DSM-5-TR?",
+  "alternativas": {
+    "A": "Apenas sintomas negativos e prejuízo cognitivo.",
+    "B": "Delírios, alucinações, discurso desorganizado, comportamento desorganizado ou catatônico e sintomas negativos.",
+    "C": "Apenas alterações do humor.",
+    "D": "Somente alterações motoras e da consciência."
+  },
+  "resposta": "B",
+  "explicacao": "A fase ativa da esquizofrenia é marcada principalmente por sintomas psicóticos positivos (delírios, alucinações, discurso e comportamento desorganizados) e também por sintomas negativos, como embotamento afetivo e abulia. Esses sintomas são fundamentais para o diagnóstico."
+},
+{
+  "id": "F17",
+  "categoria": "fácil",
+  "enunciado": "Qual é a duração mínima dos sintomas exigida pelo DSM-5-TR para o diagnóstico de Esquizofrenia?",
+  "alternativas": {
+    "A": "1 mês.",
+    "B": "3 meses.",
+    "C": "6 meses.",
+    "D": "12 meses."
+  },
+  "resposta": "C",
+  "explicacao": "O DSM-5-TR exige que os sinais do transtorno estejam presentes por pelo menos seis meses, incluindo fase prodrômica, fase ativa e fase residual. Esse critério diferencia a esquizofrenia de outros transtornos psicóticos de menor duração."
+},
+{
+  "id": "F18",
+  "categoria": "fácil",
+  "enunciado": "Qual transtorno psicótico tem duração entre 1 dia e 1 mês, com remissão completa?",
+  "alternativas": {
+    "A": "Transtorno Esquizofreniforme.",
+    "B": "Transtorno Psicótico Breve.",
+    "C": "Transtorno Delirante.",
+    "D": "Transtorno Esquizoafetivo."
+  },
+  "resposta": "B",
+  "explicacao": "O Transtorno Psicótico Breve é caracterizado por sintomas psicóticos que duram mais de 1 dia e menos de 1 mês, com retorno completo ao funcionamento anterior ao episódio."
+},
+{
+  "id": "F19",
+  "categoria": "fácil",
+  "enunciado": "Qual é a prevalência de vida aproximada da esquizofrenia na população mundial?",
+  "alternativas": {
+    "A": "0,1%.",
+    "B": "0,5%.",
+    "C": "1%.",
+    "D": "10%."
+  },
+  "resposta": "C",
+  "explicacao": "A esquizofrenia apresenta prevalência de vida em torno de 1% da população mundial, sendo uma das principais causas de incapacidade associada a transtornos mentais graves."
+},
+{
+  "id": "F20",
+  "categoria": "fácil",
+  "enunciado": "Qual característica define a psicose de forma geral?",
+  "alternativas": {
+    "A": "Rebaixamento da consciência.",
+    "B": "Prejuízo da memória recente.",
+    "C": "Perda do juízo de realidade sem rebaixamento da consciência.",
+    "D": "Exclusivamente alterações do humor."
+  },
+  "resposta": "C",
+  "explicacao": "A psicose é definida como um transtorno mental grave em que há prejuízo da avaliação da realidade, sem que haja necessariamente rebaixamento do nível de consciência."
+}
+{
+  "id": "M21",
+  "categoria": "médio",
+  "enunciado": "Qual é a principal diferença entre Esquizofrenia e Transtorno Esquizofreniforme?",
+  "alternativas": {
+    "A": "Gravidade dos sintomas.",
+    "B": "Tipo de delírio.",
+    "C": "Duração do quadro e presença de declínio funcional.",
+    "D": "Presença exclusiva de sintomas negativos."
+  },
+  "resposta": "C",
+  "explicacao": "O Transtorno Esquizofreniforme apresenta quadro clínico semelhante ao da esquizofrenia, mas com duração entre 1 e 6 meses e sem exigência de prejuízo funcional persistente."
+},
+{
+  "id": "M22",
+  "categoria": "médio",
+  "enunciado": "Qual subtipo da CID-10 é caracterizado por delírios persecutórios e alucinações auditivas proeminentes?",
+  "alternativas": {
+    "A": "Hebefrênica.",
+    "B": "Catatônica.",
+    "C": "Paranoide.",
+    "D": "Simples."
+  },
+  "resposta": "C",
+  "explicacao": "A esquizofrenia paranoide é o subtipo mais comum e caracteriza-se por delírios bem sistematizados, geralmente persecutórios, e alucinações auditivas intensas."
+},
+{
+  "id": "M23",
+  "categoria": "médio",
+  "enunciado": "Qual fator está associado a bom prognóstico na esquizofrenia?",
+  "alternativas": {
+    "A": "Início precoce.",
+    "B": "Retraimento autístico.",
+    "C": "Início agudo com fator precipitante.",
+    "D": "Sintomas negativos predominantes."
+  },
+  "resposta": "C",
+  "explicacao": "O início agudo, associado a um fator estressor identificável, geralmente indica melhor prognóstico do que quadros de instalação lenta, precoce e com sintomas negativos predominantes."
+},
+{
+  "id": "M24",
+  "categoria": "médio",
+  "enunciado": "Qual a principal indicação de hospitalização em pacientes com esquizofrenia?",
+  "alternativas": {
+    "A": "Presença de sintomas negativos.",
+    "B": "Estabilização medicamentosa e risco à segurança.",
+    "C": "Baixo rendimento escolar.",
+    "D": "Presença isolada de delírios."
+  },
+  "resposta": "B",
+  "explicacao": "A hospitalização é indicada principalmente para estabilização clínica, prevenção de suicídio ou heteroagressão, comportamento gravemente desorganizado ou incapacidade de autocuidado."
+},
+{
+  "id": "M25",
+  "categoria": "médio",
+  "enunciado": "Qual via dopaminérgica está hiperativa na esquizofrenia segundo a hipótese dopaminérgica?",
+  "alternativas": {
+    "A": "Nigroestriatal.",
+    "B": "Mesocortical.",
+    "C": "Mesolímbica.",
+    "D": "Tuberoinfundibular."
+  },
+  "resposta": "C",
+  "explicacao": "A hiperatividade da via dopaminérgica mesolímbica está associada principalmente aos sintomas positivos da esquizofrenia, como delírios e alucinações."
+}
+    {
+  "id": "D26",
+  "categoria": "difícil",
+  "enunciado": "Segundo a hipótese glutamatérgica, a hipofunção dos receptores NMDA leva a qual consequência final?",
+  "alternativas": {
+    "A": "Bloqueio da via serotoninérgica.",
+    "B": "Redução da dopamina mesolímbica.",
+    "C": "Estimulação excessiva da via dopaminérgica mesolímbica.",
+    "D": "Degeneração cortical direta."
+  },
+  "resposta": "C",
+  "explicacao": "A hipofunção dos receptores NMDA nos interneurônios GABAérgicos reduz a inibição cortical, aumentando a ativação glutamatérgica e levando à liberação excessiva de dopamina na via mesolímbica."
+},
+{
+  "id": "D27",
+  "categoria": "difícil",
+  "enunciado": "Qual achado é característico nos estudos de neuroimagem estrutural da esquizofrenia?",
+  "alternativas": {
+    "A": "Aumento do lobo frontal.",
+    "B": "Hipertrofia do hipocampo.",
+    "C": "Aumento dos ventrículos cerebrais.",
+    "D": "Aumento da substância branca."
+  },
+  "resposta": "C",
+  "explicacao": "Estudos mostram aumento dos ventrículos cerebrais e redução global do volume cerebral, especialmente nos lobos frontal e temporal, no hipocampo e no tálamo."
+},
+{
+  "id": "D28",
+  "categoria": "difícil",
+  "enunciado": "Qual é a principal característica da Esquizofrenia Simples segundo a CID-10?",
+  "alternativas": {
+    "A": "Delírios sistematizados.",
+    "B": "Alucinações auditivas frequentes.",
+    "C": "Desenvolvimento progressivo de sintomas negativos sem psicose evidente.",
+    "D": "Catatonia com episódios de estupor."
+  },
+  "resposta": "C",
+  "explicacao": "A esquizofrenia simples apresenta evolução lenta, com retraimento social, perda de iniciativa, embotamento afetivo e ausência de delírios e alucinações evidentes."
+},
+{
+  "id": "D29",
+  "categoria": "difícil",
+  "enunciado": "Qual antipsicótico é indicado para casos resistentes ao tratamento, mas apresenta risco de agranulocitose?",
+  "alternativas": {
+    "A": "Haloperidol.",
+    "B": "Quetiapina.",
+    "C": "Clozapina.",
+    "D": "Aripiprazol."
+  },
+  "resposta": "C",
+  "explicacao": "A clozapina é altamente eficaz nos casos resistentes, porém exige monitoramento rigoroso devido ao risco de agranulocitose, uma complicação hematológica grave."
+},
+{
+  "id": "D30",
+  "categoria": "difícil",
+  "enunciado": "Qual característica diferencia o Transtorno Esquizoafetivo da Esquizofrenia?",
+  "alternativas": {
+    "A": "Presença exclusiva de sintomas negativos.",
+    "B": "Presença contínua de sintomas de humor durante toda a doença.",
+    "C": "Período mínimo de 2 semanas de psicose sem sintomas de humor.",
+    "D": "Ausência completa de delírios."
+  },
+  "resposta": "C",
+  "explicacao": "No Transtorno Esquizoafetivo é obrigatório existir pelo menos duas semanas de delírios ou alucinações sem sintomas importantes de humor, além de longos períodos em que os sintomas afetivos estão presentes."
+}
+
+
   ]
 }
