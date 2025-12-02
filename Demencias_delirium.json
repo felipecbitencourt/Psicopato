@@ -1,9 +1,9 @@
 {
-  "questions": [
+  "questoes": [
     {
       "id": "F1",
       "categoria": "Fácil",
-      "pergunta": "O termo 'Síndrome cerebral orgânica' é utilizado para descrever uma alteração do funcionamento mental causada por:",
+      "enunciado": "O termo 'Síndrome cerebral orgânica' é utilizado para descrever uma alteração do funcionamento mental causada por:",
       "alternativas": {
         "A": "Um transtorno psiquiátrico primário.",
         "B": "Um transtorno do humor de origem orgânica.",
@@ -16,7 +16,7 @@
     {
       "id": "F2",
       "categoria": "Fácil",
-      "pergunta": "Segundo o DSM-5, o Delirium envolve uma perturbação da atenção acompanhada de alteração de qual outra função mental?",
+      "enunciado": "Segundo o DSM-5, o Delirium envolve uma perturbação da atenção acompanhada de alteração de qual outra função mental?",
       "alternativas": {
         "A": "Linguagem.",
         "B": "Memória de longo prazo.",
@@ -29,7 +29,7 @@
     {
       "id": "F3",
       "categoria": "Fácil",
-      "pergunta": "A prevalência aproximada de Demência em indivíduos com mais de 80 anos é:",
+      "enunciado": "A prevalência aproximada de Demência em indivíduos com mais de 80 anos é:",
       "alternativas": {
         "A": "5%.",
         "B": "15%.",
@@ -42,7 +42,7 @@
     {
       "id": "F4",
       "categoria": "Fácil",
-      "pergunta": "Qual transtorno cognitivo é classicamente descrito como agudo e reversível?",
+      "enunciado": "Qual transtorno cognitivo é classicamente descrito como agudo e reversível?",
       "alternativas": {
         "A": "Demência Vascular.",
         "B": "Doença de Alzheimer.",
@@ -55,7 +55,7 @@
     {
       "id": "F5",
       "categoria": "Fácil",
-      "pergunta": "Além de Delirium e Demência, qual categoria adicional aparece na introdução como transtorno cognitivo?",
+      "enunciado": "Além de Delirium e Demência, qual categoria adicional aparece na introdução como transtorno cognitivo?",
       "alternativas": {
         "A": "Transtorno do humor orgânico.",
         "B": "Transtorno delirante orgânico.",
@@ -68,7 +68,7 @@
     {
       "id": "M6",
       "categoria": "Média",
-      "pergunta": "Qual característica frequentemente permanece preservada por algum tempo na Demência Vascular, distinguindo-a de outros tipos de demência?",
+      "enunciado": "Qual característica frequentemente permanece preservada por algum tempo na Demência Vascular, distinguindo-a de outros tipos de demência?",
       "alternativas": {
         "A": "Marcha normal.",
         "B": "Ausência de confusão noturna.",
@@ -81,7 +81,7 @@
     {
       "id": "M7",
       "categoria": "Média",
-      "pergunta": "Apesar de a demência ser majoritariamente irreversível, qual porcentagem de casos em idosos pode ser reversível se a causa subjacente for tratável?",
+      "enunciado": "Apesar de a demência ser majoritariamente irreversível, qual porcentagem de casos em idosos pode ser reversível se a causa subjacente for tratável?",
       "alternativas": {
         "A": "5%.",
         "B": "15%.",
@@ -94,7 +94,7 @@
     {
       "id": "M8",
       "categoria": "Média",
-      "pergunta": "Qual é a faixa de prevalência observada de Delirium em pacientes internados em Unidades de Cuidados Cardíacos Intensivos?",
+      "enunciado": "Qual é a faixa de prevalência observada de Delirium em pacientes internados em Unidades de Cuidados Cardíacos Intensivos?",
       "alternativas": {
         "A": "1,1%.",
         "B": "10–30%.",
@@ -107,7 +107,7 @@
     {
       "id": "M9",
       "categoria": "Média",
-      "pergunta": "A incapacidade de reconhecer objetos apesar de funções sensoriais preservadas é chamada de:",
+      "enunciado": "A incapacidade de reconhecer objetos apesar de funções sensoriais preservadas é chamada de:",
       "alternativas": {
         "A": "Afasia.",
         "B": "Apraxia.",
@@ -120,7 +120,7 @@
     {
       "id": "M10",
       "categoria": "Média",
-      "pergunta": "Em que proporção aproximada pacientes com Demência apresentam delírios?",
+      "enunciado": "Em que proporção aproximada pacientes com Demência apresentam delírios?",
       "alternativas": {
         "A": "20–30%.",
         "B": "30–40%.",
@@ -133,7 +133,7 @@
     {
       "id": "D11",
       "categoria": "Difícil",
-      "pergunta": "Além de placas amiloides e emaranhados neurofibrilares, qual outra alteração é descrita na Doença de Alzheimer?",
+      "enunciado": "Além de placas amiloides e emaranhados neurofibrilares, qual outra alteração é descrita na Doença de Alzheimer?",
       "alternativas": {
         "A": "Redução da atividade serotoninérgica.",
         "B": "Degeneração dos neurônios dopaminérgicos.",
@@ -146,7 +146,7 @@
     {
       "id": "D12",
       "categoria": "Difícil",
-      "pergunta": "Segundo o DSM-5, o Delirium se desenvolve em horas a poucos dias e apresenta qual curso ao longo de um mesmo dia?",
+      "enunciado": "Segundo o DSM-5, o Delirium se desenvolve em horas a poucos dias e apresenta qual curso ao longo de um mesmo dia?",
       "alternativas": {
         "A": "Piora progressiva contínua.",
         "B": "Flutuação da gravidade.",
@@ -159,7 +159,7 @@
     {
       "id": "D13",
       "categoria": "Difícil",
-      "pergunta": "Além de sintomas parkinsonianos e atenção flutuante, qual achado é característico da Doença por Corpos de Lewy?",
+      "enunciado": "Além de sintomas parkinsonianos e atenção flutuante, qual achado é característico da Doença por Corpos de Lewy?",
       "alternativas": {
         "A": "Memória de curto prazo preservada inicialmente.",
         "B": "Alucinações visuais proeminentes e quedas.",
@@ -172,7 +172,7 @@
     {
       "id": "D14",
       "categoria": "Difícil",
-      "pergunta": "Qual condição é citada como exemplo de demência subcortical, marcada por alterações emocionais e motoras?",
+      "enunciado": "Qual condição é citada como exemplo de demência subcortical, marcada por alterações emocionais e motoras?",
       "alternativas": {
         "A": "Degeneração lobar frontotemporal.",
         "B": "Doença de Alzheimer.",
@@ -185,7 +185,7 @@
     {
       "id": "D15",
       "categoria": "Difícil",
-      "pergunta": "No diagnóstico de Transtorno Neurocognitivo Maior, os déficits cognitivos não devem ocorrer exclusivamente no contexto de:",
+      "enunciado": "No diagnóstico de Transtorno Neurocognitivo Maior, os déficits cognitivos não devem ocorrer exclusivamente no contexto de:",
       "alternativas": {
         "A": "Depressão maior.",
         "B": "Esquizofrenia.",
