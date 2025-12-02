@@ -3,7 +3,7 @@
     {
       "id": "F1",
       "categoria": "fácil",
-      "enunciado": "De acordo com os excertos, a Psicose é caracterizada por qual prejuízo, na ausência de rebaixamento da consciência?",
+      "enunciado": "Em termos clínicos, qual é o prejuízo central da psicose quando não há rebaixamento da consciência?",
       "alternativas": {
         "A": "Prejuízo da memória de curto prazo.",
         "B": "Prejuízo da avaliação da realidade.",
@@ -11,12 +11,12 @@
         "D": "Prejuízo da volição (vontade)."
       },
       "resposta": "B",
-      "explicacao": "A psicose é definida como um transtorno mental caracterizado pelo prejuízo da avaliação da realidade, sem rebaixamento da consciência."
+      "explicacao": "A psicose caracteriza-se principalmente por um comprometimento na capacidade de avaliar a realidade — por exemplo, o indivíduo aceita crenças ou percepções (delírios, alucinações) como verdadeiras apesar de evidências contrárias. Isso é diferente de um rebaixamento da consciência (como em delírios associados a confusão), pois a vigilância e o nível de consciência podem estar preservados, mas o juízo da realidade está alterado, afetando comportamento, comunicação e tomada de decisão."
     },
     {
       "id": "F2",
       "categoria": "fácil",
-      "enunciado": "Qual é a prevalência de vida aproximada da Esquizofrenia no mundo?",
+      "enunciado": "Qual é a prevalência de vida aproximada da esquizofrenia na população mundial?",
       "alternativas": {
         "A": "10 a 70 por 100.000 habitantes/ano.",
         "B": "50%.",
@@ -24,12 +24,12 @@
         "D": "Prevalência maior em homens."
       },
       "resposta": "C",
-      "explicacao": "A prevalência de vida da esquizofrenia é de aproximadamente 1% na população mundial."
+      "explicacao": "Estima-se que a esquizofrenia afete cerca de 1% da população ao longo da vida, uma prevalência consistente entre diferentes regiões. Essa estimativa reflete o conjunto de casos clínicos ao longo do tempo e não a incidência anual; a apresentação clínica, o acesso a tratamento e fatores socioculturais podem influenciar diagnósticos e desfechos."
     },
     {
       "id": "F3",
       "categoria": "fácil",
-      "enunciado": "Para que o diagnóstico de Esquizofrenia seja estabelecido, os sintomas devem persistir por um período mínimo de:",
+      "enunciado": "Segundo critérios diagnósticos atuais (DSM-5-TR), por quanto tempo devem persistir sintomas para que o diagnóstico de esquizofrenia seja considerado?",
       "alternativas": {
         "A": "Um dia.",
         "B": "Um mês.",
@@ -37,12 +37,12 @@
         "D": "Dois anos."
       },
       "resposta": "C",
-      "explicacao": "O DSM-5-TR exige que os sintomas persistam por pelo menos 6 meses."
+      "explicacao": "O DSM-5-TR estabelece um período total mínimo de aproximadamente 6 meses de sinais ou sintomas que inclua fases prodromais, ativas e residuais; dentro desse período, pelo menos 1 mês (ou menos, se tratado) deve apresentar sintomas ativos (delírios, alucinações, discurso desorganizado). Esse critério ajuda a diferenciar esquizofrenia de condições transitórias e de episódios psicóticos de curta duração."
     },
     {
       "id": "F4",
       "categoria": "fácil",
-      "enunciado": "Os antipsicóticos típicos alcançam sua eficácia primariamente pelo antagonismo de qual receptor neuroquímico?",
+      "enunciado": "A eficácia dos antipsicóticos clássicos (típicos) é atribuída primariamente ao antagonismo de qual receptor?",
       "alternativas": {
         "A": "Receptores GABA.",
         "B": "Receptores NMDA glutamatérgicos.",
@@ -50,12 +50,12 @@
         "D": "Receptores serotoninérgicos."
       },
       "resposta": "C",
-      "explicacao": "A eficácia dos antipsicóticos típicos está associada ao antagonismo dos receptores dopaminérgicos D2."
+      "explicacao": "Os antipsicóticos típicos exercem sua ação principalmente bloqueando os receptores dopaminérgicos D2, reduzindo a transmissão dopaminérgica em vias mesolímbicas, o que está associado à redução de sintomas positivos (delírios e alucinações). Esse mecanismo também explica efeitos adversos extrapiramidais, já que o bloqueio D2 em vias nigroestriatais interfere no controle motor."
     },
     {
       "id": "F5",
       "categoria": "fácil",
-      "enunciado": "Qual psiquiatra introduziu o termo 'esquizofrenia' para substituir 'demência precoce'?",
+      "enunciado": "Qual psiquiatra cunhou o termo 'esquizofrenia', substituindo a expressão 'demência precoce' e enfatizando aspectos clínicos ampliados do transtorno?",
       "alternativas": {
         "A": "Emil Kraepelin.",
         "B": "Eugen Bleuler.",
@@ -63,12 +63,12 @@
         "D": "Kurt Schneider."
       },
       "resposta": "B",
-      "explicacao": "Eugen Bleuler introduziu o termo 'esquizofrenia' ao propor que o transtorno não era necessariamente deteriorante."
+      "explicacao": "Eugen Bleuler introduziu o termo 'esquizofrenia' no início do século XX para refletir um conjunto mais amplo de alterações (como transtornos do pensamento e afetividade) e para desafiar a ideia de deterioração inevitável sugerida por 'demência precoce' (termo popularizado por Kraepelin). Bleuler destacou sintomas fundamentais como associação alterada, afetividade, autismo e ambivalência."
     },
     {
       "id": "M6",
       "categoria": "médio",
-      "enunciado": "Qual subtipo de esquizofrenia é citado como o mais comum, caracterizado por delírios e alucinações proeminentes?",
+      "enunciado": "Historicamente, qual apresentação clínica da esquizofrenia foi descrita como a mais associada a delírios e alucinações proeminentes?",
       "alternativas": {
         "A": "Esquizofrenia Hebefrênica.",
         "B": "Esquizofrenia Catatônica.",
@@ -76,25 +76,25 @@
         "D": "Esquizofrenia Residual."
       },
       "resposta": "C",
-      "explicacao": "A esquizofrenia paranoide é a forma mais comum, marcada por delírios e alucinações auditivas."
+      "explicacao": "A apresentação paranoide da esquizofrenia era classificada como a forma em que delírios persecutórios e alucinações (frequentemente auditivas) são mais proeminentes, às vezes com preservação relativa do pensamento e afeto. É importante notar que classificações por subtipo foram abandonadas nas versões mais recentes do DSM, mas essa descrição histórica ajuda a reconhecer padrões clínicos que guiam avaliação e manejo."
     },
     {
       "id": "M7",
       "categoria": "médio",
-      "enunciado": "O Transtorno Esquizofreniforme difere da Esquizofrenia principalmente em quais aspectos?",
+      "enunciado": "Em que aspectos o transtorno esquizofreniforme difere tipicamente da esquizofrenia propriamente dita?",
       "alternativas": {
         "A": "Duração de 6 meses a 1 ano e ausência de sintomas negativos.",
-        "B": "Duração de 1 a 6 meses e ausência de declínio no funcionamento.",
+        "B": "Duração de 1 a 6 meses e ausência de declínio funcional significativo.",
         "C": "Início agudo e presença de sintomas psicóticos não-orgânicos.",
         "D": "Presença exclusiva de delírios."
       },
       "resposta": "B",
-      "explicacao": "O transtorno esquizofreniforme dura entre 1 e 6 meses e não exige declínio funcional significativo."
+      "explicacao": "O transtorno esquizofreniforme apresenta quadro psicótico semelhante ao da esquizofrenia, mas sua duração situa-se entre 1 e 6 meses; diferentemente da esquizofrenia estabelecida, não é necessário haver um declínio duradouro significativo do funcionamento para o diagnóstico. O reconhecimento correto da duração orienta prognóstico e condução terapêutica."
     },
     {
       "id": "M8",
       "categoria": "médio",
-      "enunciado": "Quais são os Quatro As de Bleuler, considerados fundamentais na esquizofrenia?",
+      "enunciado": "Quais são os 'Quatro As' de Bleuler, conceitualmente centrais para descrever aspectos nucleares da esquizofrenia?",
       "alternativas": {
         "A": "Alucinação, Apatia, Ansiedade e Agressividade.",
         "B": "Associação, Afeto, Autismo e Ambivalência.",
@@ -102,25 +102,25 @@
         "D": "Afasia, Apraxia, Agnosia e Amnésia."
       },
       "resposta": "B",
-      "explicacao": "Bleuler propôs os Quatro As: Associação, Afeto, Autismo e Ambivalência."
+      "explicacao": "Bleuler descreveu os 'Quatro As': perturbação das Associações (pensamento desorganizado), Alterações do Afeto (inadequação, embotamento), Autismo (retirada e pensamento interior) e Ambivalência (sentimentos ou atitudes contraditórias). Esses conceitos ajudam a entender sintomas negativos e a desorganização cognitiva característica do transtorno."
     },
     {
       "id": "M9",
       "categoria": "médio",
-      "enunciado": "Qual dos seguintes fatores está associado a bom prognóstico na Esquizofrenia?",
+      "enunciado": "Qual fator entre os listados é tipicamente associado a um prognóstico mais favorável na esquizofrenia?",
       "alternativas": {
         "A": "História familiar de esquizofrenia.",
         "B": "Início precoce e insidioso.",
-        "C": "Início tardio e fatores precipitantes.",
+        "C": "Início tardio e fatores precipitantes claros (ex.: estresse agudo).",
         "D": "Retraimento autístico."
       },
       "resposta": "C",
-      "explicacao": "Início tardio e fatores precipitantes estão associados a melhor prognóstico."
+      "explicacao": "Início mais tardio da doença e aparecimento relacionado a fatores precipitantes (episódios com início relativamente abrupto após eventos estressores) costumam associar-se a melhor resposta ao tratamento e curso menos crônico. Por outro lado, início precoce, evolução insidiosa e forte história familiar geralmente apontam para pior prognóstico."
     },
     {
       "id": "M10",
       "categoria": "médio",
-      "enunciado": "Qual é a característica essencial do Transtorno Delirante Induzido (Folie à Deux)?",
+      "enunciado": "Qual é a característica conceitual do transtorno delirante induzido (também chamado 'Folie à Deux')?",
       "alternativas": {
         "A": "Ocorre apenas entre familiares de primeiro grau.",
         "B": "Os delírios desaparecem quando as pessoas são separadas.",
@@ -128,25 +128,25 @@
         "D": "Há embotamento afetivo proeminente."
       },
       "resposta": "B",
-      "explicacao": "O transtorno delirante induzido ocorre quando delírios são transmitidos a uma pessoa dependente e cessam com a separação."
+      "explicacao": "No transtorno delirante induzido, uma pessoa com delírios firmes (induzidora) transmite essas crenças a outra pessoa dependente (induzida); frequentemente, quando há separação ou intervenção terapêutica, as crenças induzidas diminuem ou cessam. O reconhecimento da dinâmica interpessoal é essencial para o manejo, que pode incluir separação temporária e tratamento do caso índice."
     },
     {
       "id": "D11",
       "categoria": "difícil",
-      "enunciado": "Qual é a principal diferença entre DSM-5-TR e CID-10 quanto ao diagnóstico da Esquizofrenia?",
+      "enunciado": "Uma diferença prática entre critérios de DSM-5-TR e CID-10 para diagnóstico de esquizofrenia é relativa à duração mínima dos sintomas. Qual a distinção?",
       "alternativas": {
         "A": "O DSM-5-TR elimina subtipos; a CID-10 os mantém.",
         "B": "O DSM-5-TR foca em sintomas positivos; a CID-10 apenas negativos.",
-        "C": "O DSM-5-TR exige 6 meses de sintomas; a CID-10 exige 1 mês.",
+        "C": "O DSM-5-TR exige ~6 meses de sintomas (incluindo prodrome); a CID-10 pode usar critério de 1 mês.",
         "D": "A CID-10 exige episódio de humor proeminente; o DSM-5-TR não."
       },
       "resposta": "C",
-      "explicacao": "O DSM-5-TR exige duração mínima de 6 meses, enquanto a CID-10 exige apenas 1 mês."
+      "explicacao": "Uma distinção importante é temporal: o DSM-5-TR requer um período total aproximado de 6 meses que inclua fases prodrômicas e ativas (com pelo menos 1 mês de sintomas ativos), enquanto a CID-10 permite diagnóstico com um período mais curto, tipicamente a partir de 1 mês de sintomas psicóticos. Isso influencia quando o diagnóstico formal é atribuído e o planejamento terapêutico."
     },
     {
       "id": "D12",
       "categoria": "difícil",
-      "enunciado": "Para o diagnóstico de Transtorno Esquizoafetivo, qual é a duração mínima de delírios ou alucinações sem sintomas de humor?",
+      "enunciado": "No transtorno esquizoafetivo, qual é o tempo mínimo exigido de sintomas psicóticos (delírios ou alucinações) que ocorrem isoladamente, sem períodos majoritários de sintomas de humor?",
       "alternativas": {
         "A": "7 dias.",
         "B": "2 semanas.",
@@ -154,12 +154,12 @@
         "D": "6 meses."
       },
       "resposta": "B",
-      "explicacao": "O DSM-5 exige pelo menos 2 semanas de sintomas psicóticos sem sintomas de humor."
+      "explicacao": "Para diferenciar esquizoafetivo de transtornos do humor com sintomas psicóticos, o DSM exige que haja pelo menos duas semanas de sintomas psicóticos persistentes na ausência de um episódio do humor (mania ou depressão) durante a vida do indivíduo. Isso indica uma componente psicótica independente do humor, guiando diagnóstico e tratamento."
     },
     {
       "id": "D13",
       "categoria": "difícil",
-      "enunciado": "De acordo com a Hipótese Glutamatérgica, qual é a consequência final da hipofunção de receptores NMDA?",
+      "enunciado": "Segundo a hipótese glutamatérgica da esquizofrenia, qual é uma consequência neuroquímica provável da hipofunção dos receptores NMDA no cérebro?",
       "alternativas": {
         "A": "Diminuição da eficácia dos antipsicóticos.",
         "B": "Hipometabolismo frontal.",
@@ -167,25 +167,25 @@
         "D": "Degeneração do giro para-hipocampal."
       },
       "resposta": "C",
-      "explicacao": "A hipofunção dos NMDA leva à falta de inibição, resultando em hiperestimulação dopaminérgica."
+      "explicacao": "A hipótese propõe que hipofunção de receptores NMDA em interneurônios GABAérgicos reduz a inibição cortical, levando a desinibição de circuitos glutamatérgicos e, por mecanismos indiretos, aumento da atividade dopaminérgica em vias mesolímbicas. Essa interação neuroquímica ajuda a explicar a origem de sintomas positivos e fornece base para investigar tratamentos além do bloqueio dopaminérgico."
     },
     {
       "id": "D14",
       "categoria": "difícil",
-      "enunciado": "Qual é a principal característica da Esquizofrenia Simples?",
+      "enunciado": "Como se descreve clinicamente a chamada 'esquizofrenia simples' em termos de sintomatologia predominante?",
       "alternativas": {
         "A": "Delírios grandiosos proeminentes.",
         "B": "Ausência de demência e sintomas catatônicos.",
-        "C": "Sintomas negativos sem sintomas psicóticos evidentes.",
+        "C": "Sintomas negativos predominantes sem psicose franca evidenciada.",
         "D": "Ocorre após depressão pós-esquizofrênica."
       },
       "resposta": "C",
-      "explicacao": "Na esquizofrenia simples, predominam sintomas negativos sem delírios ou alucinações evidentes."
+      "explicacao": "A esquizofrenia simples é caracterizada principalmente por sintomas negativos (apatia, redução da iniciativa, empobrecimento afetivo, retraimento social) e pela ausência de delírios ou alucinações proeminentes nas fases iniciais. Esse quadro pode ser sutil e evolutivo, dificultando o reconhecimento precoce e exigindo atenção a alterações funcionais persistentes."
     },
     {
       "id": "D15",
       "categoria": "difícil",
-      "enunciado": "Qual achado de neuroimagem estrutural é observado em pacientes com Esquizofrenia?",
+      "enunciado": "Qual achado estrutural frequentemente observado em neuroimagem de pacientes com esquizofrenia está relacionado a alterações de volume cerebral?",
       "alternativas": {
         "A": "Hipometabolismo frontal.",
         "B": "Aumento dos ventrículos cerebrais.",
@@ -193,7 +193,7 @@
         "D": "Defeitos nas sinapses NMDA."
       },
       "resposta": "B",
-      "explicacao": "Estudos estruturais mostram aumento dos ventrículos e redução de volume cerebral."
+      "explicacao": "Estudos de neuroimagem estrutural em esquizofrenia frequentemente relatam aumento dos ventrículos laterais e redução de volume em regiões corticais e subcorticais, refletindo perda relativa de massa cerebral. Esses achados são sutis e variam entre indivíduos; sua presença apoia hipóteses de alterações neurodesenvolvimentais e degenerativas, mas o diagnóstico continua clínico."
     }
   ]
 }
