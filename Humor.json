@@ -1,5 +1,5 @@
 {
-  "questoes": [
+   "questoes": [
     {
       "id": "F1",
       "categoria": "Fácil",
@@ -10,7 +10,7 @@
         "C": "Alterações crônicas nas aminas biogênicas.",
         "D": "O risco aumentado de suicídio."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "O núcleo dos transtornos do humor é a alteração do humor, seja depressiva ou maníaca."
     },
     {
@@ -23,7 +23,7 @@
         "C": "Hipócrates.",
         "D": "Robert Burton."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "Hipócrates utilizou os termos 'mania' e 'melancolia' por volta de 400 a.C."
     },
     {
@@ -36,7 +36,7 @@
         "C": "Noradrenalina e Serotonina.",
         "D": "Glutamato e Histamina."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "A hipótese monoaminérgica enfatiza o papel da noradrenalina e serotonina."
     },
     {
@@ -49,7 +49,7 @@
         "C": "Três vezes maior no sexo feminino.",
         "D": "Sem diferenças entre grupos."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "O TDM ocorre cerca de duas vezes mais em mulheres."
     },
     {
@@ -62,7 +62,7 @@
         "C": "15%.",
         "D": "60,7%."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "A OMS estima prevalência global de cerca de 10,4%."
     },
     {
@@ -75,7 +75,7 @@
         "C": "De 6 a 13 meses.",
         "D": "De 2 a 5 meses."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "O episódio não tratado costuma durar de 6 a 13 meses."
     },
     {
@@ -88,7 +88,7 @@
         "C": "A severidade, pois a mania pode exigir hospitalização ou apresentar psicose.",
         "D": "A redução da necessidade de sono, exclusiva da mania."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "A mania é mais grave, podendo exigir internação ou apresentar sintomas psicóticos."
     },
     {
@@ -101,7 +101,7 @@
         "C": "Sedação e discrasias sanguíneas.",
         "D": "Efeitos anticolinérgicos como boca seca, constipação e risco cardíaco."
       },
-      "correta": "D",
+      "resposta": "D",
       "explicacao": "Os ADT têm potente ação anticolinérgica e risco cardíaco."
     },
     {
@@ -114,7 +114,7 @@
         "C": "Hipomania em 10–20% dos casos.",
         "D": "Episódio misto."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "O TB I inicia-se predominantemente por episódios depressivos."
     },
     {
@@ -127,7 +127,7 @@
         "C": "Ser crônico (≥ 2 anos) e menos grave que um TDM.",
         "D": "Ser crônico, mas sem baixa autoestima ou desesperança."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "A distimia é crônica e de menor gravidade que um episódio depressivo maior."
     },
     {
@@ -140,7 +140,7 @@
         "C": "Humor deprimido ou perda de interesse/prazer.",
         "D": "Agitação ou retardo psicomotor."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "O DSM exige pelo menos um dos dois sintomas nucleares: humor deprimido ou anedonia."
     },
     {
@@ -153,7 +153,7 @@
         "C": "25% de chance de algum transtorno do humor.",
         "D": "50% de chance de ter um dos pais afetado."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "O risco aumenta de 8 a 18 vezes em parentes de 1º grau."
     },
     {
@@ -166,7 +166,7 @@
         "C": "T. Depressivo é mais prevalente nos subúrbios; T. Bipolar nos centros urbanos.",
         "D": "Não há relação conhecida com geografia."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "O risco de T. Bipolar é maior em áreas suburbanas, enquanto depressão é mais comum em centros urbanos."
     },
     {
@@ -179,7 +179,7 @@
         "C": "60,7%.",
         "D": "95%."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "A taxa é cerca de 60,7%, muito maior que os 13,3% da população geral."
     },
     {
@@ -192,7 +192,7 @@
         "C": "Antipsicóticos atípicos.",
         "D": "Carbamazepina e Ácido Valproico."
       },
-      "correta": "D",
+      "resposta": "D",
       "explicacao": "Anticonvulsivantes como valproato e carbamazepina são mais eficazes em cicladores rápidos."
     }
   ]
