@@ -2,7 +2,7 @@
   "questoes": [
     {
       "id": "F1",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "De acordo com os excertos, a Psicose é caracterizada por qual prejuízo, na ausência de rebaixamento da consciência?",
       "alternativas": {
         "A": "Prejuízo da memória de curto prazo.",
@@ -15,7 +15,7 @@
     },
     {
       "id": "F2",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "Qual é a prevalência de vida aproximada da Esquizofrenia no mundo?",
       "alternativas": {
         "A": "10 a 70 por 100.000 habitantes/ano.",
@@ -28,7 +28,7 @@
     },
     {
       "id": "F3",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "Para que o diagnóstico de Esquizofrenia seja estabelecido, os sintomas devem persistir por um período mínimo de:",
       "alternativas": {
         "A": "Um dia.",
@@ -41,7 +41,7 @@
     },
     {
       "id": "F4",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "Os antipsicóticos típicos alcançam sua eficácia primariamente pelo antagonismo de qual receptor neuroquímico?",
       "alternativas": {
         "A": "Receptores GABA.",
@@ -54,7 +54,7 @@
     },
     {
       "id": "F5",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "Qual psiquiatra introduziu o termo 'esquizofrenia' para substituir 'demência precoce'?",
       "alternativas": {
         "A": "Emil Kraepelin.",
@@ -67,7 +67,7 @@
     },
     {
       "id": "M6",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "Qual subtipo de esquizofrenia é citado como o mais comum, caracterizado por delírios e alucinações proeminentes?",
       "alternativas": {
         "A": "Esquizofrenia Hebefrênica.",
@@ -80,7 +80,7 @@
     },
     {
       "id": "M7",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "O Transtorno Esquizofreniforme difere da Esquizofrenia principalmente em quais aspectos?",
       "alternativas": {
         "A": "Duração de 6 meses a 1 ano e ausência de sintomas negativos.",
@@ -93,7 +93,7 @@
     },
     {
       "id": "M8",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "Quais são os Quatro As de Bleuler, considerados fundamentais na esquizofrenia?",
       "alternativas": {
         "A": "Alucinação, Apatia, Ansiedade e Agressividade.",
@@ -106,7 +106,7 @@
     },
     {
       "id": "M9",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "Qual dos seguintes fatores está associado a bom prognóstico na Esquizofrenia?",
       "alternativas": {
         "A": "História familiar de esquizofrenia.",
@@ -119,7 +119,7 @@
     },
     {
       "id": "M10",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "Qual é a característica essencial do Transtorno Delirante Induzido (Folie à Deux)?",
       "alternativas": {
         "A": "Ocorre apenas entre familiares de primeiro grau.",
@@ -132,7 +132,7 @@
     },
     {
       "id": "D11",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Qual é a principal diferença entre DSM-5-TR e CID-10 quanto ao diagnóstico da Esquizofrenia?",
       "alternativas": {
         "A": "O DSM-5-TR elimina subtipos; a CID-10 os mantém.",
@@ -145,7 +145,7 @@
     },
     {
       "id": "D12",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Para o diagnóstico de Transtorno Esquizoafetivo, qual é a duração mínima de delírios ou alucinações sem sintomas de humor?",
       "alternativas": {
         "A": "7 dias.",
@@ -158,7 +158,7 @@
     },
     {
       "id": "D13",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "De acordo com a Hipótese Glutamatérgica, qual é a consequência final da hipofunção de receptores NMDA?",
       "alternativas": {
         "A": "Diminuição da eficácia dos antipsicóticos.",
@@ -171,7 +171,7 @@
     },
     {
       "id": "D14",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Qual é a principal característica da Esquizofrenia Simples?",
       "alternativas": {
         "A": "Delírios grandiosos proeminentes.",
@@ -184,7 +184,7 @@
     },
     {
       "id": "D15",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Qual achado de neuroimagem estrutural é observado em pacientes com Esquizofrenia?",
       "alternativas": {
         "A": "Hipometabolismo frontal.",
