@@ -2,7 +2,7 @@
   "questoes": [
     {
       "id": "F1",
-      "categoria": "facil",
+      "categoria": "fácil",
       "enunciado": "Na perspectiva predominante na sociedade ocidental, o suicídio costuma ser entendido como:",
       "alternativas": {
         "A": "Um ato aleatório e sem propósito.",
@@ -10,12 +10,12 @@
         "C": "Uma tentativa de escapar de um problema ou crise que causa sofrimento intenso.",
         "D": "Um pecado máximo por impossibilitar o arrependimento."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "O suicídio é visto como uma forma de tentar escapar de sofrimento intenso causado por problemas ou crises."
     },
     {
       "id": "F2",
-      "categoria": "facil",
+      "categoria": "fácil",
       "enunciado": "Segundo a OMS, qual é a estimativa média de frequência de suicídios no mundo?",
       "alternativas": {
         "A": "Uma pessoa se suicida a cada 3 segundos.",
@@ -23,12 +23,12 @@
         "C": "Uma pessoa se suicida a cada 24 horas.",
         "D": "Uma pessoa se suicida uma vez por ano."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "A OMS estima que uma pessoa morre por suicídio a cada 40 segundos no mundo."
     },
     {
       "id": "F3",
-      "categoria": "facil",
+      "categoria": "fácil",
       "enunciado": "As mulheres apresentam probabilidade quantas vezes maior de tentar suicídio em comparação aos homens?",
       "alternativas": {
         "A": "2 vezes maior.",
@@ -36,12 +36,12 @@
         "C": "4 vezes maior.",
         "D": "10 vezes maior."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "As mulheres têm aproximadamente 4 vezes mais probabilidade de tentar suicídio que os homens."
     },
     {
       "id": "F4",
-      "categoria": "facil",
+      "categoria": "fácil",
       "enunciado": "Qual é a forma mais adequada de investigar se uma pessoa está tendo pensamentos suicidas?",
       "alternativas": {
         "A": "Esperar que ela espontaneamente conte seus planos.",
@@ -49,12 +49,12 @@
         "C": "Basear-se apenas na observação de sinais psicomotores.",
         "D": "Interromper o paciente com frequência para obter respostas rápidas."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "A melhor forma de identificar ideação suicida é enunciadondo diretamente ao paciente."
     },
     {
       "id": "F5",
-      "categoria": "facil",
+      "categoria": "fácil",
       "enunciado": "O suicídio ocupa a quarta posição entre as causas de morte em qual faixa etária?",
       "alternativas": {
         "A": "10 a 15 anos.",
@@ -62,12 +62,12 @@
         "C": "25 a 45 anos.",
         "D": "Acima de 75 anos."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "O suicídio é a quarta principal causa de morte entre jovens de 15 a 30 anos."
     },
     {
       "id": "M6",
-      "categoria": "medio",
+      "categoria": "médio",
       "enunciado": "Segundo o texto, qual porcentagem das pessoas que tentam ou cometem suicídio apresenta algum transtorno mental diagnosticado?",
       "alternativas": {
         "A": "Mais de 50%.",
@@ -75,12 +75,12 @@
         "C": "Entre 90% e 95%.",
         "D": "Cerca de 60%."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "Entre 90% e 95% das pessoas que tentam ou cometem suicídio têm transtornos mentais diagnosticados."
     },
     {
       "id": "M7",
-      "categoria": "medio",
+      "categoria": "médio",
       "enunciado": "Qual região do Brasil registrou a maior taxa de mortalidade por suicídio, com 9,3 mortes por 100 mil habitantes?",
       "alternativas": {
         "A": "Centro-Oeste.",
@@ -88,12 +88,12 @@
         "C": "Sul.",
         "D": "Sudeste (Campinas)."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "A Região Sul apresentou a maior taxa de mortalidade por suicídio."
     },
     {
       "id": "M8",
-      "categoria": "medio",
+      "categoria": "médio",
       "enunciado": "Qual método é descrito como mais comum entre mulheres, exceto em Hong Kong e Índia?",
       "alternativas": {
         "A": "Atirar-se de locais elevados.",
@@ -101,12 +101,12 @@
         "C": "Envenenamento por pesticidas ou medicamentos.",
         "D": "Administração intravenosa de substâncias tóxicas."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "O envenenamento é o método mais comum entre mulheres."
     },
     {
       "id": "M9",
-      "categoria": "medio",
+      "categoria": "médio",
       "enunciado": "As taxas de suicídio aumentam progressivamente com a idade, atingindo maior risco a partir de:",
       "alternativas": {
         "A": "45 anos.",
@@ -114,12 +114,12 @@
         "C": "65 anos.",
         "D": "75 anos."
       },
-      "correta": "D",
+      "resposta": "D",
       "explicacao": "O maior risco ocorre a partir dos 75 anos."
     },
     {
       "id": "M10",
-      "categoria": "medio",
+      "categoria": "médio",
       "enunciado": "Qual proporção das pessoas que cometeram suicídio havia recebido atendimento médico nos 6 meses anteriores ao ato?",
       "alternativas": {
         "A": "15%.",
@@ -127,12 +127,12 @@
         "C": "32%.",
         "D": "40%."
       },
-      "correta": "C",
+      "resposta": "C",
       "explicacao": "32% dos indivíduos haviam recebido atendimento médico nos 6 meses anteriores."
     },
     {
       "id": "D11",
-      "categoria": "dificil",
+      "categoria": "difícil",
       "enunciado": "Qual metabólito da serotonina encontrado no líquido cérebro-espinhal (LCE) apresenta níveis reduzidos associados ao comportamento suicida?",
       "alternativas": {
         "A": "Triptofano hidroxilase.",
@@ -140,5 +140,5 @@
         "C": "Alelo L da triptofano hidroxilase.",
         "D": "Monoamina oxidase."
       },
-      "correta": "B",
+      "resposta": "B",
       "explicacao": "Baixas concentrações de 5-HIAA no LCE estão associadas ao comportamento suicida."
