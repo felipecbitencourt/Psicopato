@@ -2,7 +2,7 @@
    "questoes": [
     {
       "id": "F1",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "Segundo a definição apresentada, qual é a característica nuclear dos Transtornos do Humor?",
       "alternativas": {
         "A": "A ausência de deterioração cognitiva progressiva.",
@@ -15,7 +15,7 @@
     },
     {
       "id": "F2",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "Quem é reconhecido como o primeiro a utilizar os termos 'mania' e 'melancolia', diferenciando a depressão como doença?",
       "alternativas": {
         "A": "Emil Kraepelin.",
@@ -28,7 +28,7 @@
     },
     {
       "id": "F3",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "Quais neurotransmissores são mais implicados na fisiopatologia dos transtornos do humor segundo a hipótese monoaminérgica?",
       "alternativas": {
         "A": "Acetilcolina e GABA.",
@@ -41,7 +41,7 @@
     },
     {
       "id": "F4",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "A prevalência do Transtorno Depressivo Maior (TDM) é:",
       "alternativas": {
         "A": "Igual entre homens e mulheres.",
@@ -54,7 +54,7 @@
     },
     {
       "id": "F5",
-      "categoria": "Fácil",
+      "categoria": "fácil",
       "enunciado": "Qual é a estimativa global de prevalência de depressão segundo a OMS (2020)?",
       "alternativas": {
         "A": "1%.",
@@ -67,7 +67,7 @@
     },
     {
       "id": "M6",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "Sem tratamento, um episódio depressivo maior costuma durar:",
       "alternativas": {
         "A": "Cerca de 3 meses.",
@@ -80,7 +80,7 @@
     },
     {
       "id": "M7",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "Qual fator diferencia mais claramente um Episódio Maníaco de um Hipomaníaco?",
       "alternativas": {
         "A": "A duração mínima: hipomania exige 7 dias.",
@@ -93,7 +93,7 @@
     },
     {
       "id": "M8",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "Quais efeitos adversos são típicos dos antidepressivos tricíclicos?",
       "alternativas": {
         "A": "Disfunção sexual e insônia.",
@@ -106,7 +106,7 @@
     },
     {
       "id": "M9",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "O Transtorno Bipolar I costuma iniciar-se mais frequentemente por:",
       "alternativas": {
         "A": "Mania em 75% das mulheres.",
@@ -119,7 +119,7 @@
     },
     {
       "id": "M10",
-      "categoria": "Média",
+      "categoria": "médio",
       "enunciado": "O Transtorno Depressivo Persistente caracteriza-se por:",
       "alternativas": {
         "A": "Ser mais grave que o TDM e episódico.",
@@ -132,7 +132,7 @@
     },
     {
       "id": "D11",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Para confirmar o diagnóstico de Episódio Depressivo Maior, um dos sintomas obrigatórios deve ser:",
       "alternativas": {
         "A": "Fadiga.",
@@ -145,7 +145,7 @@
     },
     {
       "id": "D12",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Parentes de primeiro grau de indivíduos com Transtorno Bipolar I têm risco:",
       "alternativas": {
         "A": "2 a 3 vezes maior que a população geral.",
@@ -158,7 +158,7 @@
     },
     {
       "id": "D13",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Sobre o local de residência, qual diferença se observa entre Transtorno Depressivo e Transtorno Bipolar?",
       "alternativas": {
         "A": "Ambos são mais prevalentes nos centros urbanos.",
@@ -171,7 +171,7 @@
     },
     {
       "id": "D14",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "A prevalência de abuso/dependência de álcool e drogas em pacientes com Transtorno Bipolar é aproximadamente:",
       "alternativas": {
         "A": "16%.",
@@ -184,7 +184,7 @@
     },
     {
       "id": "D15",
-      "categoria": "Difícil",
+      "categoria": "difícil",
       "enunciado": "Qual classe de medicamentos é preferida no tratamento de manutenção do T. Bipolar I em cicladores rápidos?",
       "alternativas": {
         "A": "ISRSs.",
