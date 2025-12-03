@@ -45,12 +45,12 @@
       "enunciado": "Qual é a forma mais adequada de investigar se uma pessoa está tendo pensamentos suicidas?",
       "alternativas": {
         "A": "Esperar que ela espontaneamente conte seus planos.",
-        "B": "enunciador de maneira direta e objetiva.",
+        "B": "Perguntar de maneira direta e objetiva.",
         "C": "Basear-se apenas na observação de sinais psicomotores.",
         "D": "Interromper o paciente com frequência para obter respostas rápidas."
       },
       "resposta": "B",
-      "explicacao": "A melhor forma de identificar ideação suicida é enunciadondo diretamente ao paciente."
+      "explicacao": "A melhor forma de identificar ideação suicida é perguntando diretamente ao paciente."
     },
     {
       "id": "F5",
@@ -142,3 +142,58 @@
       },
       "resposta": "B",
       "explicacao": "Baixas concentrações de 5-HIAA no LCE estão associadas ao comportamento suicida."
+    },
+    {
+      "id": "D12",
+      "categoria": "difícil",
+      "enunciado": "Qual alteração funcional no eixo HPA (hipotálamo–pituitária–adrenal) é frequentemente associada ao comportamento suicida?",
+      "alternativas": {
+        "A": "Redução da resposta ao CRH.",
+        "B": "Hiperreatividade ao teste de supressão com dexametasona.",
+        "C": "Supressão completa do cortisol matinal.",
+        "D": "Aumento da secreção de TSH."
+      },
+      "resposta": "B",
+      "explicacao": "Pacientes suicidas frequentemente mostram falha na supressão do cortisol no teste com dexametasona, indicando hiperatividade do eixo HPA."
+    },
+    {
+      "id": "D13",
+      "categoria": "difícil",
+      "enunciado": "Qual área do córtex pré-frontal tem sido particularmente implicada na impulsividade e na tomada de decisões associadas ao comportamento suicida?",
+      "alternativas": {
+        "A": "Córtex pré-frontal dorsolateral.",
+        "B": "Córtex orbitofrontal.",
+        "C": "Giro angular.",
+        "D": "Córtex visual primário."
+      },
+      "resposta": "B",
+      "explicacao": "Disfunções no córtex orbitofrontal estão ligadas à impulsividade e decisões prejudicadas, comum em comportamento suicida."
+    },
+    {
+      "id": "D14",
+      "categoria": "difícil",
+      "enunciado": "Estudos neurobiológicos indicam que a redução de que tipo de receptor serotoninérgico está relacionada a maior risco de suicídio?",
+      "alternativas": {
+        "A": "Receptores 5-HT1A.",
+        "B": "Receptores 5-HT2A.",
+        "C": "Receptores NMDA.",
+        "D": "Receptores GABA-A."
+      },
+      "resposta": "A",
+      "explicacao": "A diminuição da função dos receptores 5-HT1A tem sido relatada em cérebros de indivíduos suicidas."
+    },
+    {
+      "id": "D15",
+      "categoria": "difícil",
+      "enunciado": "Qual variante genética do transportador de serotonina (SLC6A4) está mais associada à vulnerabilidade ao comportamento suicida sob estresse?",
+      "alternativas": {
+        "A": "Alele L.",
+        "B": "Alele XL.",
+        "C": "Alele S (curto).",
+        "D": "Alele Z."
+      },
+      "resposta": "C",
+      "explicacao": "O alelo curto (S) do gene SLC6A4 está associado a maior sensibilidade ao estresse e risco de comportamento suicida."
+    }
+  ]
+}
