@@ -1,0 +1,1443 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Transtornos Psicóticos — Guia Interativo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #0A0A0A;
+      --surface: rgba(255,255,255,0.03);
+      --primary: #8A2BE2; /* Roxo mais claro e vibrante */
+      --primary-light: rgba(138, 43, 226, 0.15);
+      --primary-2: #9D4EDD; /* Roxo médio mais suave */
+      --accent: #00B4D8; /* Azul ciano no lugar do vermelho */
+      --accent-secondary: #FF6B6B; /* Cor secundária para contraste */
+      --text: #F6F6F6;
+      --muted: #B0B0B0;
+      --glass: rgba(255,255,255,0.04);
+      --radius: 16px;
+      --gap: 24px;
+      --max-width: 1400px;
+      --shadow: 0 12px 36px rgba(0,0,0,0.5);
+      --card-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    * { 
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html, body {
+      height: 100%;
+      background: linear-gradient(135deg, #0A0A0A 0%, #1a1a2e 100%);
+      color: var(--text);
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    /* Container principal */
+    .app {
+      display: flex;
+      min-height: 100vh;
+      padding: 20px;
+      justify-content: center;
+      background: radial-gradient(circle at 20% 30%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(0, 180, 216, 0.05) 0%, transparent 50%);
+    }
+    
+    .frame {
+      width: 100%;
+      max-width: var(--max-width);
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: var(--gap);
+      animation: fadeIn 0.8s ease-out;
+    }
+    
+    /* Sidebar melhorada */
+    .sidebar {
+      position: sticky;
+      top: 20px;
+      height: fit-content;
+      max-height: calc(100vh - 40px);
+      background: rgba(15, 15, 25, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: var(--radius);
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: var(--shadow);
+      overflow-y: auto;
+      z-index: 10;
+    }
+    
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: white;
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(138, 43, 226, 0.4);
+    }
+    
+    .title {
+      font-weight: 700;
+      font-size: 18px;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav li {
+      margin: 8px 0;
+      position: relative;
+    }
+    
+    nav a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: var(--transition);
+      border-left: 3px solid transparent;
+    }
+    
+    nav a:hover {
+      background: rgba(138, 43, 226, 0.1);
+      color: var(--text);
+      transform: translateX(4px);
+    }
+    
+    nav a.active {
+      background: rgba(138, 43, 226, 0.15);
+      color: var(--text);
+      border-left: 3px solid var(--primary);
+      box-shadow: inset 0 0 20px rgba(138, 43, 226, 0.1);
+    }
+    
+    nav a i {
+      width: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    /* Conteúdo principal */
+    .content {
+      padding: 24px;
+      border-radius: var(--radius);
+      background: rgba(15, 15, 25, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: var(--shadow);
+    }
+    
+    /* Hero section melhorada */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 30px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(138, 43, 226, 0.2) 0%, rgba(0, 180, 216, 0.15) 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--primary), transparent);
+    }
+    
+    .hero h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .hero p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 800px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .stats {
+      display: flex;
+      gap: 16px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    
+    .badge {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 10px 18px;
+      border-radius: 12px;
+      font-weight: 600;
+      color: var(--text);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+    }
+    
+    .badge:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border-color: rgba(138, 43, 226, 0.3);
+    }
+    
+    .badge i {
+      color: var(--primary);
+    }
+    
+    /* Seções */
+    section {
+      margin-top: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      scroll-margin-top: 20px;
+    }
+    
+    section:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    .section-head h2 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .section-head h2 i {
+      color: var(--primary);
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-top: 16px;
+    }
+    
+    @media (min-width: 992px) {
+      .grid {
+        grid-template-columns: 1fr 340px;
+      }
+    }
+    
+    /* Cards modernizados */
+    .card {
+      background: rgba(20, 20, 30, 0.6);
+      padding: 24px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: var(--card-shadow);
+      transition: var(--transition);
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+      border-color: rgba(138, 43, 226, 0.2);
+    }
+    
+    .card h3, .card h4 {
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .card h3 i, .card h4 i {
+      color: var(--primary);
+    }
+    
+    /* Accordion modernizado */
+    .accordion-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    
+    .accordion-item {
+      background: rgba(20, 20, 30, 0.6);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: var(--transition);
+    }
+    
+    .accordion-item:hover {
+      border-color: rgba(138, 43, 226, 0.3);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .accordion-header {
+      width: 100%;
+      text-align: left;
+      padding: 20px;
+      border: 0;
+      background: rgba(138, 43, 226, 0.05);
+      color: var(--text);
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    
+    .accordion-header:hover {
+      background: rgba(138, 43, 226, 0.1);
+    }
+    
+    .accordion-header i {
+      transition: transform 0.3s ease;
+    }
+    
+    .accordion-header[aria-expanded="true"] i {
+      transform: rotate(180deg);
+    }
+    
+    .accordion-content {
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+    
+    .accordion-content.open {
+      padding: 20px;
+      max-height: 1000px;
+    }
+    
+    .accordion-content ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    
+    .accordion-content li {
+      margin: 8px 0;
+    }
+    
+    /* Tabela estilizada */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      color: var(--text);
+      margin-top: 10px;
+    }
+    
+    th {
+      background: rgba(138, 43, 226, 0.1);
+      padding: 16px;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 2px solid rgba(138, 43, 226, 0.3);
+    }
+    
+    td {
+      padding: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    tr:hover {
+      background: rgba(138, 43, 226, 0.05);
+    }
+    
+    /* Botões e pills */
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 50px;
+      background: rgba(138, 43, 226, 0.1);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid rgba(138, 43, 226, 0.2);
+      transition: var(--transition);
+    }
+    
+    .pill:hover {
+      background: rgba(138, 43, 226, 0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn {
+      padding: 12px 24px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(138, 43, 226, 0.3);
+    }
+    
+    /* Gráficos placeholder */
+    .chart-placeholder {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      border: 2px dashed rgba(138, 43, 226, 0.3);
+      color: var(--muted);
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .chart-placeholder i {
+      font-size: 32px;
+      color: var(--primary);
+    }
+    
+    /* Footer */
+    .foot {
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Responsividade */
+    @media (max-width: 1100px) {
+      .accordion-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .app {
+        padding: 12px;
+      }
+      
+      .frame {
+        grid-template-columns: 1fr;
+      }
+      
+      .sidebar {
+        position: fixed;
+        left: -320px;
+        top: 0;
+        height: 100vh;
+        z-index: 100;
+        width: 300px;
+        padding-top: 70px;
+        transition: left 0.3s ease;
+        max-height: 100vh;
+      }
+      
+      .sidebar.open {
+        left: 0;
+      }
+      
+      .content {
+        padding: 20px;
+      }
+      
+      .hero {
+        padding: 20px;
+      }
+      
+      .hero h1 {
+        font-size: 24px;
+      }
+      
+      .stats {
+        flex-direction: column;
+      }
+      
+      .mobile-menu-btn {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 101;
+        background: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 12px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .section-head {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    
+    @media (min-width: 769px) {
+      .mobile-menu-btn {
+        display: none;
+      }
+    }
+    
+    /* Utilitários */
+    .muted {
+      color: var(--muted);
+    }
+    
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    
+    .tag {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(138, 43, 226, 0.15);
+      color: var(--primary);
+      margin-left: 10px;
+    }
+    
+    .info-box {
+      background: rgba(0, 180, 216, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+    
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    
+    .data-item {
+      background: rgba(138, 43, 226, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      transition: var(--transition);
+    }
+    
+    .data-item:hover {
+      background: rgba(138, 43, 226, 0.15);
+      transform: translateY(-3px);
+    }
+    
+    /* Ajustes específicos para evitar sobreposição */
+    .content-section {
+      margin-bottom: 40px;
+      clear: both;
+    }
+    
+    /* Limpar floats se necessário */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <div class="frame">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="logo">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div>
+            <div class="title">Transtornos Psicóticos</div>
+            <div class="muted" style="font-size:13px">Guia Interativo Completo</div>
+          </div>
+        </div>
+        
+        <nav aria-label="Seções">
+          <ul>
+            <li><a href="#intro" class="nav-link active"><i class="fas fa-home"></i> Visão Geral</a></li>
+            <li><a href="#tipos" class="nav-link"><i class="fas fa-th-large"></i> Tipos & Classificação</a></li>
+            <li><a href="#epid" class="nav-link"><i class="fas fa-chart-line"></i> Epidemiologia</a></li>
+            <li><a href="#etiologia" class="nav-link"><i class="fas fa-dna"></i> Etiologia</a></li>
+            <li><a href="#neuro" class="nav-link"><i class="fas fa-brain"></i> Neurobiologia</a></li>
+            <li><a href="#neuroq" class="nav-link"><i class="fas fa-atom"></i> Neuroquímica</a></li>
+            <li><a href="#cid10" class="nav-link"><i class="fas fa-list-alt"></i> Subtipos (CID-10)</a></li>
+            <li><a href="#curso" class="nav-link"><i class="fas fa-road"></i> Curso & Prognóstico</a></li>
+            <li><a href="#trat" class="nav-link"><i class="fas fa-heartbeat"></i> Tratamento</a></li>
+            <li><a href="#recursos" class="nav-link"><i class="fas fa-book-medical"></i> Recursos</a></li>
+          </ul>
+        </nav>
+        
+        <div style="margin-top: 30px;">
+          <button id="toggleSidebar" class="btn" style="width: 100%; justify-content: center;">
+            <i class="fas fa-times"></i> Fechar Menu
+          </button>
+        </div>
+        
+        <div class="foot">
+          <p>Guia Clínico Interativo • Atualizado em 2024</p>
+          <p style="font-size: 11px; margin-top: 5px;">Para estudantes e profissionais de saúde mental</p>
+        </div>
+      </aside>
+
+      <main class="content" id="main">
+        <!-- Seção 1: Visão Geral -->
+        <section id="intro" class="reveal visible content-section">
+          <div class="hero">
+            <h1><i class="fas fa-brain"></i> Transtornos Psicóticos</h1>
+            <p>Guia interativo completo para compreensão, diagnóstico e tratamento dos transtornos psicóticos. Desenvolvido para estudantes e profissionais de saúde mental com conteúdo clínico atualizado.</p>
+            <div class="stats">
+              <div class="badge"><i class="fas fa-users"></i> Prevalência mundial: <span class="highlight">1%</span></div>
+              <div class="badge"><i class="fas fa-chart-bar"></i> Incidência anual: <span class="highlight">10–70 /100k</span></div>
+              <div class="badge"><i class="fas fa-exclamation-triangle"></i> Risco de suicídio: <span class="highlight">10%</span></div>
+              <div class="badge"><i class="fas fa-clock"></i> Início típico: <span class="highlight">15-35 anos</span></div>
+            </div>
+          </div>
+          
+          <div class="grid" style="margin-top: 30px;">
+            <div class="card">
+              <h3><i class="fas fa-lightbulb"></i> O que são Transtornos Psicóticos?</h3>
+              <p class="muted" style="margin-bottom: 16px;">São condições mentais graves caracterizadas por pensamento desorganizado, percepções alteradas da realidade (delírios e alucinações), e prejuízo no funcionamento social e ocupacional.</p>
+              
+              <div class="info-box">
+                <p><strong>Definição prática:</strong> Os transtornos psicóticos envolvem uma ruptura na avaliação da realidade, manifestada através de sintomas positivos (alucinações, delírios) e negativos (apatia, embotamento afetivo).</p>
+              </div>
+            </div>
+            
+            <div class="card">
+              <h3><i class="fas fa-stethoscope"></i> Diagnóstico Diferencial</h3>
+              <p class="muted">É essencial diferenciar entre os diversos tipos de transtornos psicóticos, condições médicas gerais, e transtornos induzidos por substâncias.</p>
+              
+              <div style="margin-top: 20px;">
+                <a href="#tipos" class="pill"><i class="fas fa-arrow-right"></i> Explorar Classificação</a>
+                <a href="#trat" class="pill" style="margin-left: 10px;"><i class="fas fa-heartbeat"></i> Abordagens de Tratamento</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção 2: Tipos e Classificação -->
+        <section id="tipos" class="reveal content-section" tabindex="0">
+          <div class="section-head">
+            <h2><i class="fas fa-th-large"></i> Tipos de Transtornos Psicóticos</h2>
+            <div class="pill"><i class="fas fa-expand-alt"></i> Cards Interativos</div>
+          </div>
+          
+          <p class="muted" style="margin-bottom: 20px;">Clique em cada card para expandir e visualizar critérios diagnósticos, características clínicas e informações relevantes para cada transtorno.</p>
+          
+          <div class="accordion-grid">
+            <!-- Card 1: Esquizofrenia -->
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>Esquizofrenia <span class="tag">Primário</span></span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p><strong>Critérios principais (DSM-5):</strong></p>
+                <ul>
+                  <li>Presença de sintomas característicos por ≥ 6 meses</li>
+                  <li>Fase ativa com ≥ 2 dos seguintes: delírios, alucinações, discurso desorganizado, comportamento desorganizado, sintomas negativos</li>
+                  <li>Declínio significativo no funcionamento ocupacional/social</li>
+                  <li>Exclusão de transtorno esquizoafetivo e depressivo bipolar</li>
+                </ul>
+                <div class="info-box" style="margin-top: 15px;">
+                  <p><strong>Nota clínica:</strong> O diagnóstico requer diferenciação cuidadosa de condições médicas gerais e transtornos induzidos por substâncias.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 2: Transtorno Esquizofreniforme -->
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>Transtorno Esquizofreniforme</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p><strong>Características principais:</strong></p>
+                <ul>
+                  <li>Sintomas idênticos à esquizofrenia</li>
+                  <li>Duração entre <strong>1 a 6 meses</strong></li>
+                  <li>Não há exigência de declínio funcional (diferencial da esquizofrenia)</li>
+                  <li>Pode evoluir para esquizofrenia se persistir além de 6 meses</li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Card 3: Transtorno Psicótico Breve -->
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>Transtorno Psicótico Breve</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p><strong>Características distintivas:</strong></p>
+                <ul>
+                  <li>Duração mínima: <strong>> 1 dia</strong></li>
+                  <li>Duração máxima: <strong>< 1 mês</strong></li>
+                  <li>Remissão completa para o funcionamento pré-mórbido</li>
+                  <li>Frequentemente desencadeado por estressores significativos</li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Card 4: Transtorno Esquizoafetivo -->
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>Transtorno Esquizoafetivo</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p><strong>Critérios diagnósticos:</strong></p>
+                <ul>
+                  <li>Período contínuo de doença com episódio de humor maior (depressivo ou maníaco)</li>
+                  <li>Sintomas da fase ativa da esquizofrenia presentes na ausência de sintomas de humor</li>
+                  <li>Sintomas de humor presentes durante a maior parte da duração total da doença</li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Card 5: Transtorno Delirante -->
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>Transtorno Delirante</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p><strong>Características principais:</strong></p>
+                <ul>
+                  <li>Presença de delírios por ≥ 1 mês</li>
+                  <li>Ausência de outros sintomas proeminentes da fase ativa da esquizofrenia</li>
+                  <li>Funcionamento não marcadamente prejudicado</li>
+                  <li>Comportamento não obviamente bizarro ou estranho</li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Card 6: Outros Transtornos -->
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span>Outros Transtornos Psicóticos</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p><strong>Inclui:</strong></p>
+                <ul>
+                  <li><strong>Transtorno Psicótico devido a outra condição médica:</strong> Psicose atribuível a condição médica identificável</li>
+                  <li><strong>Transtorno Psicótico induzido por substância/medicamento:</strong> Relacionado ao uso ou abstinência</li>
+                  <li><strong>Transtorno Esquizotípico:</strong> Transtorno de personalidade com características psicóticas atenuadas</li>
+                  <li><strong>Folie à deux:</strong> Transtorno delirante induzido (compartilhado)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card" style="margin-top: 30px;">
+            <h4><i class="fas fa-clock"></i> Duração como Critério Chave</h4>
+            <div class="data-grid">
+              <div class="data-item">
+                <div class="highlight">Esquizofrenia</div>
+                <div class="muted">≥ 6 meses</div>
+              </div>
+              <div class="data-item">
+                <div class="highlight">Esquizofreniforme</div>
+                <div class="muted">1-6 meses</div>
+              </div>
+              <div class="data-item">
+                <div class="highlight">Psicótico Breve</div>
+                <div class="muted">>1 dia - < 1 mês</div>
+              </div>
+              <div class="data-item">
+                <div class="highlight">Delirante</div>
+                <div class="muted">≥ 1 mês</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção 3: Epidemiologia -->
+        <section id="epid" class="reveal content-section" tabindex="0">
+          <div class="section-head">
+            <h2><i class="fas fa-chart-line"></i> Epidemiologia</h2>
+            <div class="muted">Distribuição, incidência e prevalência mundial</div>
+          </div>
+          
+          <div class="grid">
+            <div>
+              <div class="card">
+                <h3><i class="fas fa-globe-americas"></i> Dados Epidemiológicos</h3>
+                <ul style="margin-top: 15px;">
+                  <li><strong>Prevalência de vida:</strong> Aproximadamente <span class="highlight">1%</span> da população mundial</li>
+                  <li><strong>Incidência anual:</strong> Varia entre <span class="highlight">10–70 novos casos por 100.000 habitantes</span></li>
+                  <li><strong>Distribuição por sexo:</strong> Similar entre homens e mulheres, mas com diferenças no curso</li>
+                  <li><strong>Idade de início:</strong> Homens (15–25 anos), mulheres (25–35 anos)</li>
+                  <li><strong>Mortalidade por suicídio:</strong> Cerca de <span class="highlight">10%</span> dos pacientes</li>
+                  <li><strong>Expectativa de vida:</strong> Reduzida em 10-25 anos em comparação com a população geral</li>
+                </ul>
+              </div>
+              
+              <div class="card" style="margin-top: 20px;">
+                <h4><i class="fas fa-map-marked-alt"></i> Variações Geográficas</h4>
+                <p class="muted">A incidência mostra variações regionais significativas, com taxas mais altas em países desenvolvidos e áreas urbanas. Fatores como acesso a cuidados, estigma e métodos diagnósticos influenciam essas variações.</p>
+              </div>
+            </div>
+            
+            <aside>
+              <div class="card">
+                <h4><i class="fas fa-chart-bar"></i> Visualização de Dados</h4>
+                <div class="chart-placeholder">
+                  <i class="fas fa-chart-pie"></i>
+                  <div>Gráfico: Distribuição por Faixa Etária</div>
+                  <div class="muted" style="font-size: 12px;">(Dados epidemiológicos ilustrativos)</div>
+                </div>
+                <p class="muted" style="margin-top: 15px; font-size: 14px;">Os dados epidemiológicos são fundamentais para planejamento de serviços de saúde mental e alocação de recursos.</p>
+              </div>
+              
+              <div class="card" style="margin-top: 20px;">
+                <h4><i class="fas fa-lightbulb"></i> Implicações Clínicas</h4>
+                <p class="muted">A compreensão da epidemiologia ajuda na detecção precoce, especialmente em grupos de risco, e na implementação de estratégias preventivas.</p>
+                <a href="#curso" class="pill" style="margin-top: 15px; display: inline-block;"><i class="fas fa-arrow-right"></i> Ver Prognóstico</a>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Seção 4: Etiologia -->
+        <section id="etiologia" class="reveal content-section" tabindex="0">
+          <div class="section-head">
+            <h2><i class="fas fa-dna"></i> Etiologia</h2>
+            <div class="muted">Modelo estresse-diátese e evidências genéticas</div>
+          </div>
+          
+          <div class="grid">
+            <div>
+              <div class="card">
+                <h3><i class="fas fa-sitemap"></i> Modelo Estresse-Diátese</h3>
+                <p class="muted" style="margin-bottom: 16px;">Este modelo propõe que os transtornos psicóticos resultam da interação entre vulnerabilidade genética (diátese) e fatores ambientais estressantes.</p>
+                
+                <div class="data-grid">
+                  <div class="data-item">
+                    <div class="highlight">Fatores Genéticos</div>
+                    <div class="muted">Vulnerabilidade herdada</div>
+                  </div>
+                  <div class="data-item">
+                    <div class="highlight">Fatores Ambientais</div>
+                    <div class="muted">Estressores psicossociais</div>
+                  </div>
+                  <div class="data-item">
+                    <div class="highlight">Fatores Biológicos</div>
+                    <div class="muted">Complicações perinatais</div>
+                  </div>
+                  <div class="data-item">
+                    <div class="highlight">Fatores Sociais</div>
+                    <div class="muted">Ambiente urbano, migração</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card" style="margin-top: 20px;">
+                <h4><i class="fas fa-dna"></i> Evidências Genéticas</h4>
+                <ul>
+                  <li>Filhos de paciente com esquizofrenia — chance ≈ <span class="highlight">10%</span></li>
+                  <li>Gêmeos monozigóticos — taxa de concordância ≈ <span class="highlight">50%</span></li>
+                  <li>Gêmeos dizigóticos — taxa de concordância ≈ <span class="highlight">15%</span></li>
+                  <li>Irmãos não gêmeos — risco ≈ <span class="highlight">9%</span></li>
+                  <li>População geral — risco ≈ <span class="highlight">1%</span></li>
+                </ul>
+              </div>
+            </div>
+            
+            <aside>
+              <div class="card">
+                <h4><i class="fas fa-project-diagram"></i> Diagrama Interativo</h4>
+                <div class="chart-placeholder">
+                  <i class="fas fa-share-alt"></i>
+                  <div>Diagrama: Modelo Estresse-Diátese</div>
+                  <div class="muted" style="font-size: 12px;">(Clique para interagir)</div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Seção 5: Neurobiologia -->
+        <section id="neuro" class="reveal content-section" tabindex="0">
+          <div class="section-head">
+            <h2><i class="fas fa-brain"></i> Neurobiologia</h2>
+            <div class="muted">Achados estruturais e funcionais</div>
+          </div>
+          
+          <div class="grid">
+            <div>
+              <div class="card">
+                <h3><i class="fas fa-magnet"></i> Achados de Neuroimagem</h3>
+                <p class="muted">Estudos de TC/RM revelam alterações estruturais consistentes:</p>
+                <ul style="margin-top: 10px;">
+                  <li><strong>Aumento de ventrículos cerebrais</strong> (especialmente ventrículos laterais)</li>
+                  <li><strong>Diminuição de volume cerebral geral</strong> (2-3% em média)</li>
+                  <li><strong>Redução de volume dos lobos frontal e temporal</strong></li>
+                  <li><strong>Hipocampo e giro parahipocampal diminuídos</strong></li>
+                  <li><strong>Tálamo reduzido</strong></li>
+                  <li><strong>Redução de substância cinzenta</strong></li>
+                </ul>
+              </div>
+              
+              <div class="card" style="margin-top: 20px;">
+                <h4><i class="fas fa-brain"></i> Imagem Esquemática</h4>
+                <div class="chart-placeholder">
+                  <i class="fas fa-brain"></i>
+                  <div>Ilustração: Alterações Cerebrais</div>
+                  <div class="muted" style="font-size: 12px;">(Áreas afetadas destacadas)</div>
+                </div>
+              </div>
+            </div>
+            
+            <aside>
+              <div class="card">
+                <h4><i class="fas fa-wave-square"></i> Neuroimagem Funcional (PET/SPECT)</h4>
+                <p class="muted">Estudos funcionais demonstram:</p>
+                <ul>
+                  <li><strong>Hipometabolismo no lobo frontal</strong> (hipofrontalidade)</li>
+                  <li><strong>Córtex pré-frontal hipoativo/hiperativo</strong></li>
+                  <li><strong>Conectividade anormal entre regiões cerebrais</strong></li>
+                  <li><strong>Ativação reduzida durante tarefas executivas</strong></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Seção 6: Neuroquímica -->
+        <section id="neuroq" class="reveal content-section" tabindex="0">
+          <div class="section-head">
+            <h2><i class="fas fa-atom"></i> Neuroquímica</h2>
+            <div class="muted">Dopamina, serotonina e glutamato</div>
+          </div>
+          
+          <div class="grid">
+            <div>
+              <div class="card">
+                <h4><i class="fas fa-brain"></i> Hipótese Dopaminérgica</h4>
+                <p class="muted">Atividade dopaminérgica aumentada na via mesolímbica. Antipsicóticos clássicos antagonizam receptores D2.</p>
+                <ul>
+                  <li>Liberação excessiva de dopamina em vias mesolímbicas</li>
+                  <li>Maior densidade de receptores D2 pós-sinápticos</li>
+                  <li>Hipersensibilidade de receptores dopaminérgicos</li>
+                  <li>Atividade reduzida na via mesocortical (sintomas negativos)</li>
+                </ul>
+              </div>
+
+              <div class="card" style="margin-top: 20px;">
+                <h4><i class="fas fa-atom"></i> Hipótese Serotoninérgica</h4>
+                <p class="muted">Antipsicóticos atípicos têm ação sobre receptores serotoninérgicos (5-HT2A).</p>
+                <ul>
+                  <li>Redução da atividade serotoninérgica pode relacionar-se a comportamento suicida/impulsivo</li>
+                  <li>Antagonismo 5-HT2A reduz efeitos extrapiramidais</li>
+                  <li>Modulação serotoninérgica melhora sintomas negativos e cognitivos</li>
+                </ul>
+              </div>
+
+              <div class="card" style="margin-top: 20px;">
+                <h4><i class="fas fa-bolt"></i> Hipótese Glutamatérgica</h4>
+                <p class="muted">Hipofunção dos receptores NMDA; antagonistas como quetamina produzem quadro semelhante.</p>
+                <div class="info-box" style="margin-top: 15px;">
+                  <p><strong>Circuito proposto:</strong> Se NMDA em interneurônios gabaérgicos estiver hipoativo → menos liberação de GABA → desinibição de neurônios piramidais glutamatérgicos → via cortical ao VTA hiperativada → liberação excessiva de glutamato → estimulação da via dopaminérgica mesolímbica.</p>
+                </div>
+              </div>
+            </div>
+
+            <aside>
+              <div class="card">
+                <h4><i class="fas fa-project-diagram"></i> Fluxograma Neuroquímico</h4>
+                <div class="chart-placeholder">
+                  <i class="fas fa-share-alt"></i>
+                  <div>Fluxo: Vias Neuroquímicas</div>
+                  <div class="muted" style="font-size: 12px;">(Interativo - clique para animar)</div>
+                </div>
+                <button id="playFlow" class="btn" style="margin-top: 15px; width: 100%; justify-content: center;">
+                  <i class="fas fa-play"></i> Executar Animação
+                </button>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Seção 7: Subtipos CID-10 -->
+        <section id="cid10" class="reveal content-section" tabindex="0">
+          <div class="section-head">
+            <h2><i class="fas fa-list-alt"></i> Subtipos (CID-10)</h2>
+            <div class="muted">Classificação Internacional de Doenças, 10ª revisão</div>
+          </div>
+          
+          <div class="card" style="margin-top: 12px;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Subtipo</th>
+                  <th>Sintomas Proeminentes</th>
+                  <th>Notas Clínicas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Paranoide</strong></td>
+                  <td>Delírios (perseguição/ciúmes/referência/grandeza); alucinações auditivas</td>
+                  <td>Mais comum; preservação relativa do afeto e cognição</td>
+                </tr>
+                <tr>
+                  <td><strong>Hebefrênica</strong></td>
+                  <td>Afeto superficial/inadequado; comportamento desorganizado; discurso incoerente</td>
+                  <td>Início precoce (15-25 anos); prognóstico geralmente pior</td>
+                </tr>
+                <tr>
+                  <td><strong>Catatônica</strong></td>
+                  <td>Perturbações psicomotoras (estupor, excitação, postura, negativismo)</td>
+                  <td>Manifestações motoras proeminentes; pode requerer intervenção urgente</td>
+                </tr>
+                <tr>
+                  <td><strong>Indiferenciada</strong></td>
+                  <td>Sintomas psicóticos que não satisfazem critérios para outros subtipos</td>
+                  <td>Apresentação mista ou atípica</td>
+                </tr>
+                <tr>
+                  <td><strong>Depressão pós-esquizofrênica</strong></td>
+                  <td>Episódio depressivo após fase psicótica da esquizofrenia</td>
+                  <td>Risco aumentado de suicídio; requer monitoramento cuidadoso</td>
+                </tr>
+                <tr>
+                  <td><strong>Residual</strong></td>
+                  <td>Sintomas negativos de longa duração após fase ativa</td>
+                  <td>Predomínio de embotamento afetivo, pobreza do discurso, avolição</td>
+                </tr>
+                <tr>
+                  <td><strong>Simples</strong></td>
+                  <td>Desenvolvimento insidioso; conduta estranha; sem delírios/alucinações evidentes</td>
+                  <td>Declínio funcional progressivo; diagnóstico desafiador</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Seção 8: Curso e Prognóstico -->
+        <section id="curso" class="reveal content-section" tabindex="0">
+          <div class="section-head">
+            <h2><i class="fas fa-road"></i> Curso & Prognóstico</h2>
+            <div class="muted">Fases, percentuais e fatores prognósticos</div>
+          </div>
+          
+          <div class="grid">
+            <div>
+              <div class="card">
+                <h3><i class="fas fa-road"></i> Fases do Transtorno</h3>
+                <ol style="margin-top: 15px; padding-left: 20px;">
+                  <li><strong>Período prodrômico</strong> (semanas a anos): alterações comportamentais sutis, declínio funcional gradual</li>
+                  <li><strong>Episódio psicótico agudo</strong>: sintomas positivos proeminentes, ruptura com a realidade</li>
+                  <li><strong>Estado residual</strong>: predomínio de sintomas negativos, déficits cognitivos</li>
+                </ol>
+
+                <h4 style="margin-top: 20px;"><i class="fas fa-chart-pie"></i> Prognóstico (Estimativas)</h4>
+                <div class="data-grid">
+                  <div class="data-item">
+                    <div class="highlight">20–30%</div>
+                    <div class="muted">Capaz de levar vida razoavelmente normal</div>
+                  </div>
+                  <div class="data-item">
+                    <div class="highlight">20–30%</div>
+                    <div class="muted">Sintomas moderados persistentes</div>
+                  </div>
+                  <div class="data-item">
+                    <div class="highlight">40–60%</div>
+                    <div class="muted">Significativamente prejudicados</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="margin-top: 20px;">
+                <h4><i class="fas fa-thumbs-up"></i> Fatores de Bom Prognóstico</h4>
+                <ul class="muted">
+                  <li><strong>Início tardio</strong> (após 25 anos)</li>
+                  <li><strong>Início agudo</strong> com fatores precipitantes identificáveis</li>
+                  <li><strong>Boa adaptação social pré-mórbida</strong></li>
+                  <li>Presença de <strong>sintomas de humor</strong></li>
+                  <li><strong>Bom suporte social e familiar</strong></li>
+                  <li><strong>Tratamento precoce e adequado</strong></li>
+                </ul>
+                
+                <h4 style="margin-top: 20px;"><i class="fas fa-thumbs-down"></i> Fatores de Mau Prognóstico</h4>
+                <ul class="muted">
+                  <li><strong>Início precoce e insidioso</strong></li>
+                  <li><strong>Pobre adaptação social pré-mórbida</strong></li>
+                  <li><strong>Sintomas negativos proeminentes</strong></li>
+                  <li><strong>Trauma perinatal</strong></li>
+                  <li><strong>Longa duração de psicose não tratada</strong></li>
+                  <li><strong>Ausência de remissão em 3 anos</strong></li>
+                  <li><strong>História familiar de esquizofrenia</strong></li>
+                </ul>
+              </div>
+            </div>
+
+            <aside>
+              <div class="card">
+                <h4><i class="fas fa-chart-line"></i> Curso Longitudinal</h4>
+                <div class="chart-placeholder">
+                  <i class="fas fa-chart-line"></i>
+                  <div>Gráfico: Trajetória do Curso</div>
+                  <div class="muted" style="font-size: 12px;">(Modelos de evolução)</div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Seção 9: Tratamento -->
+        <section id="trat" class="reveal content-section" tabindex="0">
+          <div class="section-head">
+            <h2><i class="fas fa-heartbeat"></i> Tratamento</h2>
+            <div class="muted">Abordagens farmacológicas e psicossociais integradas</div>
+          </div>
+          
+          <div class="grid">
+            <div>
+              <div class="card">
+                <h3><i class="fas fa-capsules"></i> Intervenções Farmacológicas</h3>
+                
+                <h4 style="margin-top: 20px;"><i class="fas fa-prescription-bottle"></i> Antipsicóticos Típicos (1ª Geração)</h4>
+                <p class="muted">Haloperidol, clorpromazina, levomepromazina — bloqueio D2.</p>
+                <p><strong>Efeitos adversos comuns:</strong> sintomas extrapiramidais, discinesia tardia, síndrome neuroléptica maligna, efeitos anticolinérgicos.</p>
+                
+                <h4 style="margin-top: 20px;"><i class="fas fa-pills"></i> Antipsicóticos Atípicos (2ª Geração)</h4>
+                <p class="muted">Risperidona, olanzapina, quetiapina, aripiprazol — antagonismo D2/serotonina.</p>
+                <p><strong>Vantagens:</strong> menor risco extrapiramidal, melhor eficácia em sintomas negativos e cognitivos.</p>
+                <p><strong>Desvantagens:</strong> maior risco metabólico (ganho de peso, diabetes, dislipidemia).</p>
+                
+                <h4 style="margin-top: 20px;"><i class="fas fa-exclamation-triangle"></i> Clozapina</h4>
+                <p class="muted">Indicada para casos resistentes ao tratamento. Requer monitorização hematológica devido ao risco de agranulocitose.</p>
+                <div class="info-box" style="margin-top: 15px;">
+                  <p><strong>Indicações para clozapina:</strong> Esquizofrenia resistente (falha a ≥2 antipsicóticos), sintomas suicidas persistentes, discinesia tardia, agressividade/agitação.</p>
+                </div>
+              </div>
+            </div>
+            
+            <aside>
+              <div class="card">
+                <h4><i class="fas fa-table"></i> Tabela Comparativa</h4>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Classe</th>
+                      <th>Exemplos</th>
+                      <th>Perfil de Efeitos</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Típicos</td>
+                      <td>Haloperidol, Clorpromazina</td>
+                      <td>Alto risco de EPS, baixo risco metabólico</td>
+                    </tr>
+                    <tr>
+                      <td>Atípicos</td>
+                      <td>Risperidona, Olanzapina</td>
+                      <td>Baixo risco de EPS, maior risco metabólico</td>
+                    </tr>
+                    <tr>
+                      <td>Atípicos de 3ª Geração</td>
+                      <td>Aripiprazol, Cariprazina</td>
+                      <td>Agonismo parcial D2, perfil favorável</td>
+                    </tr>
+                    <tr>
+                      <td>Resistência</td>
+                      <td>Clozapina</td>
+                      <td>Eficácia superior, risco hematológico</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="card" style="margin-top: 20px;">
+                <h4><i class="fas fa-hands-helping"></i> Intervenções Psicossociais</h4>
+                <ul class="muted">
+                  <li><strong>Terapia cognitivo-comportamental para psicose</strong></li>
+                  <li><strong>Treinamento de habilidades sociais</strong></li>
+                  <li><strong>Psicoeducação familiar</strong></li>
+                  <li><strong>Reabilitação vocacional</strong></li>
+                  <li><strong>Tratamento assertivo comunitário</strong></li>
+                  <li><strong>Intervenções precoces em psicose</strong></li>
+                  <li><strong>Gestão de casos</strong></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Seção de Recursos -->
+        <section id="recursos" class="reveal content-section" tabindex="0">
+          <div class="section-head">
+            <h2><i class="fas fa-book-medical"></i> Recursos Adicionais</h2>
+            <div class="muted">Material complementar para estudo aprofundado</div>
+          </div>
+          
+          <div class="grid">
+            <div class="card">
+              <h3><i class="fas fa-book-open"></i> Leituras Recomendadas</h3>
+              <ul style="margin-top: 15px;">
+                <li><strong>DSM-5</strong> - Critérios diagnósticos oficiais</li>
+                <li><strong>CID-11</strong> - Classificação Internacional de Doenças</li>
+                <li><strong>Kaplan & Sadock</strong> - Compêndio de Psiquiatria</li>
+                <li><strong>Stahl's Essential Psychopharmacology</strong> - Bases neurofarmacológicas</li>
+              </ul>
+            </div>
+            
+            <div class="card">
+              <h3><i class="fas fa-graduation-cap"></i> Para Estudantes</h3>
+              <p class="muted">Recursos para aprofundamento no tema:</p>
+              <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+                <a href="#" class="pill"><i class="fas fa-file-pdf"></i> Protocolos Clínicos</a>
+                <a href="#" class="pill"><i class="fas fa-video"></i> Videoaulas</a>
+                <a href="#" class="pill"><i class="fas fa-question-circle"></i> QUIZ de Revisão</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="foot">
+          <p>Guia Interativo de Transtornos Psicóticos • Fins educacionais • Consulte fontes primárias para prática clínica</p>
+          <p style="font-size: 12px; margin-top: 10px;">Desenvolvido com foco em acessibilidade e precisão clínica • Versão 2.0</p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    // Toggle da sidebar em dispositivos móveis
+    const sidebar = document.getElementById('sidebar');
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const toggleSidebar = document.getElementById('toggleSidebar');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+      mobileMenuBtn.innerHTML = sidebar.classList.contains('open') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+    });
+    
+    toggleSidebar.addEventListener('click', () => {
+      sidebar.classList.remove('open');
+      mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+    
+    // Fechar sidebar ao clicar em um link (em dispositivos móveis)
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          sidebar.classList.remove('open');
+          mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+      });
+    });
+    
+    // Accordion functionality
+    document.querySelectorAll('.accordion-header').forEach(button => {
+      button.addEventListener('click', () => {
+        const accordionContent = button.nextElementSibling;
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        
+        // Fecha todos os outros accordions
+        document.querySelectorAll('.accordion-content').forEach(content => {
+          content.classList.remove('open');
+        });
+        
+        document.querySelectorAll('.accordion-header').forEach(btn => {
+          btn.setAttribute('aria-expanded', 'false');
+        });
+        
+        // Abre o accordion clicado se não estava aberto
+        if (!isExpanded) {
+          button.setAttribute('aria-expanded', 'true');
+          accordionContent.classList.add('open');
+        }
+      });
+    });
+    
+    // Scroll reveal animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    
+    // Scrollspy para navegação da sidebar
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    window.addEventListener('scroll', () => {
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (scrollY >= (sectionTop - 150)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+    
+    // Animação do fluxo neuroquímico
+    document.getElementById('playFlow')?.addEventListener('click', function() {
+      const btn = this;
+      const originalText = btn.innerHTML;
+      
+      btn.innerHTML = '<i class="fas fa-sync-alt fa-spin"></i> Animando...';
+      btn.disabled = true;
+      
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fas fa-check"></i> Concluído';
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+        }, 1500);
+      }, 2000);
+    });
+    
+    // Inicialização
+    document.addEventListener('DOMContentLoaded', () => {
+      // Adiciona ano atual no footer
+      const year = new Date().getFullYear();
+      const footer = document.querySelector('.foot p:first-child');
+      if (footer) {
+        footer.innerHTML = footer.innerHTML.replace('2024', year);
+      }
+    });
+    
+    // Animações interativas para badges
+    document.querySelectorAll('.badge').forEach(badge => {
+      badge.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-5px)';
+      });
+      
+      badge.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+      });
+    });
+    
+    // Suavizar scroll para âncoras
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 20,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
